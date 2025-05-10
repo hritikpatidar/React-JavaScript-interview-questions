@@ -1,17 +1,5 @@
 # React-JavaScript-interview-questions
 
-## Question 1: useEffect में async क्यों नहीं इस्तेमाल कर सकते?
-**Answer:** useEffect का callback synchronous होना चाहिए। async function callback लौटाएगा एक Promise, जिससे React उसे cleanup समझ सकता है। इसलिए हमें callback में async function को define और call करना चाहिए, ना कि सीधे callback को async बनाना।
-
-```js
-useEffect(() => {
-  const fetchData = async () => {
-    // async logic here
-  };
-  fetchData();
-}, []);
-```
-
 ## Question 1: 📘 What is Reactjs📦Latest Version and Key Features in React 18?
 **Answer:** **React.js** is a **popular JavaScript library** for building **interactive user interfaces (UIs)**. Developed and maintained by **Meta (formerly Facebook)**, React allows developers to create **reusable UI components**, manage the state efficiently, and build scalable front-end applications.
 ## ✅ Key Points:
@@ -176,4 +164,18 @@ function InputFocus() {
   );
 }
 
+```
+
+## Question 3: Why can't we use `async` directly in `useEffect`?
+
+**Answer:**  The callback function passed to `useEffect` must be **synchronous**. If you make it `async`, it returns a **Promise**, which React would interpret as a cleanup function — but cleanup functions must be synchronous as well.  
+To handle asynchronous code, define an `async` function **inside** the `useEffect` and then **call it**.
+
+```js
+useEffect(() => {
+  const fetchData = async () => {
+    // Your async logic here
+  };
+  fetchData();
+}, []);
 ```
