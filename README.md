@@ -4,6 +4,8 @@
 
 | No. | Question                                                                                                               |
 | --- | ---------------------------------------------------------------------------------------------------------------------- |
+|    | [React Project Installation Using Vite Recommended](#question-react-project-installation-using-vite-recommended)                                               |
+|   | [React Project Installation Using Next.js Recommended for Production](#question--react-project-installation-using-nextjs-recommended-for-production)                                               |
 | 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                                        |
 | 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained)               |
 | 3   | [Why can't we use `async` directly in `useEffect`?](#question-3-why-cant-we-use-async-directly-in-useeffect)           |
@@ -17,7 +19,7 @@
 | 11  | [What are the Types of Components in React?](#question-11-what-are-the-types-of-components-in-react)                   |
 
 
-## 🚀 React Project Installation (Using Vite – Recommended)
+## Question: React Project Installation Using Vite Recommended
 
 Follow these steps to set up a modern React project using **Vite**:
 
@@ -55,7 +57,7 @@ yarn dev
 ```
 Your app will be running at http://localhost:5173 by default.
 
-## ⚡ React Project Installation (Using Next.js – Recommended for Production)
+## Question : React Project Installation Using Next.js Recommended for Production
 
 Follow these steps to create a React project with **Next.js**, a powerful React framework with built-in routing, SSR, and more.
 
