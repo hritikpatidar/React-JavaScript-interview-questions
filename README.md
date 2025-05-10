@@ -1,4 +1,11 @@
-# React-JavaScript-interview-questions
+# 📚 React JavaScript Interview Questions – Table of Contents
+
+
+1. [📘 What is ReactJS? Latest Version and Key Features in React 18](#question-1-what-is-reactjslatest-version-and-key-features-in-react-18)
+2. [🔧 What are Hooks and Important Hooks Explained](#question-2-what-is-hooks-and-discribe-imp-hooks)
+3. [❓ Why can't we use `async` directly in `useEffect`](#question-3-why-cant-we-use-async-directly-in-useeffect)
+
+# 📚 React JavaScript Interview Questions
 
 ## Question 1: 📘 What is Reactjs📦Latest Version and Key Features in React 18?
 **Answer:** **React.js** is a **popular JavaScript library** for building **interactive user interfaces (UIs)**. Developed and maintained by **Meta (formerly Facebook)**, React allows developers to create **reusable UI components**, manage the state efficiently, and build scalable front-end applications.
