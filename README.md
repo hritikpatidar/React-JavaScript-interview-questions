@@ -242,7 +242,7 @@ export default App;
 //output
 Hello from HOC!
 ```
-
+ 
 ## Question 6: What is Props in React?
 
 **Answer:** In React, **props** (short for "properties") are used to pass **data from parent to child components**. They make components **dynamic and reusable**.
