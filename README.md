@@ -2,19 +2,19 @@
 
 # Table of Contents
 
-| No. | Question                                                                                                     |
-| --- | ------------------------------------------------------------------------------------------------------------ |
-| 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                              |
-| 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained)     |
-| 3   | [Why can't we use `async` directly in `useEffect`?](#question-3-why-cant-we-use-async-directly-in-useeffect) |
-| 4   | [What is Props?](#question-4-what-is-props)                                                                  |
-| 5   | [What is a Higher-Order Component (HOC)?](#question-5-what-is-a-higher-order-component-hoc)                  |
-| 6   | [What is State in React?](#question-6-what-is-state-in-react)|
-| 7   | [What is Props in React?](#question-7-what-is-props-in-react)|
-| 8   | [What is Prop Drilling in React?](#question-8-what-is-prop-drilling-in-react)|
-| 9   | [What is Context API in React?](#question-9-what-is-context-api-in-react)|
-| 10   | [Lifecycle Methods of React Components?](#question-10-lifecycle-methods-of-react-components)|
-| 11   | [Types of Components in React?](#question-11-types-of-components-in-react)|
+| No. | Question                                                                                                               |
+| --- | ---------------------------------------------------------------------------------------------------------------------- |
+| 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                                        |
+| 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained)               |
+| 3   | [Why can't we use `async` directly in `useEffect`?](#question-3-why-cant-we-use-async-directly-in-useeffect)           |
+| 4   | [What is Props?](#question-4-what-is-props)                                                                            |
+| 5   | [What is a Higher-Order Component (HOC)?](#question-5-what-is-a-higher-order-component-hoc)                            |
+| 6   | [What is State in React?](#question-6-what-is-state-in-react)                                                          |
+| 7   | [What is Props in React?](#question-7-what-is-props-in-react)                                                          |
+| 8   | [What is Prop Drilling in React?](#question-8-what-is-prop-drilling-in-react)                                          |
+| 9   | [What is Context API in React?](#question-9-what-is-context-api-in-react)                                              |
+| 10  | [What are the Lifecycle Methods of React Components?](#question-10-what-are-the-lifecycle-methods-of-react-components) |
+| 11  | [What are the Types of Components in React?](#question-11-what-are-the-types-of-components-in-react)                   |
 
 
 
@@ -394,7 +394,7 @@ function Dashboard() {
 - Improves component reusability and decouples data access.
 
 
-## Question 10: Lifecycle Methods of React Components
+## Question 10: What are the Lifecycle Methods of React Components?
 **Answer:** In React class components, **lifecycle methods** are special methods that get called at different phases of a component’s life. These methods allow you to run code at specific points in a component's lifecycle — such as when it's **created**, **updated**, or **destroyed**.
 
 ### 🔁 Lifecycle Phases:
@@ -407,53 +407,53 @@ function Dashboard() {
 ---
 
 ### 🧱 1. Mounting Methods
-| Method               | Purpose                                                |
-|----------------------|--------------------------------------------------------|
-| `constructor()`      | Initializes state and binds methods                   |
-| `static getDerivedStateFromProps()` | Updates state based on props (rarely used)          |
-| `render()`           | Returns JSX to render                                  |
-| `componentDidMount()`| Runs after the component is mounted (good for API calls) |
+| Method                              | Purpose                                                  |
+| ----------------------------------- | -------------------------------------------------------- |
+| `constructor()`                     | Initializes state and binds methods                      |
+| `static getDerivedStateFromProps()` | Updates state based on props (rarely used)               |
+| `render()`                          | Returns JSX to render                                    |
+| `componentDidMount()`               | Runs after the component is mounted (good for API calls) |
 
 ---
 
 ### 🔄 2. Updating Methods
-| Method                        | Purpose                                           |
-|-------------------------------|---------------------------------------------------|
-| `static getDerivedStateFromProps()` | Runs before every render, even on updates             |
-| `shouldComponentUpdate()`     | Allows skipping re-rendering for performance      |
-| `render()`                    | Re-renders the UI                                 |
-| `getSnapshotBeforeUpdate()`   | Captures info (e.g., scroll position) before DOM updates |
-| `componentDidUpdate()`        | Runs after DOM updates                            |
+| Method                              | Purpose                                                  |
+| ----------------------------------- | -------------------------------------------------------- |
+| `static getDerivedStateFromProps()` | Runs before every render, even on updates                |
+| `shouldComponentUpdate()`           | Allows skipping re-rendering for performance             |
+| `render()`                          | Re-renders the UI                                        |
+| `getSnapshotBeforeUpdate()`         | Captures info (e.g., scroll position) before DOM updates |
+| `componentDidUpdate()`              | Runs after DOM updates                                   |
 
 ---
 
 ### 🗑️ 3. Unmounting Method
-| Method              | Purpose                        |
-|---------------------|--------------------------------|
+| Method                   | Purpose                                                                 |
+| ------------------------ | ----------------------------------------------------------------------- |
 | `componentWillUnmount()` | Cleanup before component is destroyed (e.g., clear timers, unsubscribe) |
 
 ---
 
 ### 🧯 4. Error Handling Methods
-| Method                    | Purpose                                      |
-|---------------------------|----------------------------------------------|
-| `static getDerivedStateFromError()` | Used to render a fallback UI                 |
-| `componentDidCatch()`     | Logs error details                            |
+| Method                              | Purpose                      |
+| ----------------------------------- | ---------------------------- |
+| `static getDerivedStateFromError()` | Used to render a fallback UI |
+| `componentDidCatch()`               | Logs error details           |
 
 ---
 
 ### 🔁 Functional Components (Hooks Equivalent)
 React Hooks provide similar lifecycle capabilities in functional components:
 
-| Class Component       | Hook Equivalent         |
-|------------------------|-------------------------|
-| `componentDidMount`    | `useEffect(() => {}, [])`     |
-| `componentDidUpdate`   | `useEffect(() => {...}, [dep])` |
+| Class Component        | Hook Equivalent                           |
+| ---------------------- | ----------------------------------------- |
+| `componentDidMount`    | `useEffect(() => {}, [])`                 |
+| `componentDidUpdate`   | `useEffect(() => {...}, [dep])`           |
 | `componentWillUnmount` | `useEffect(() => return () => {...}, [])` |
 
 ---
 
-## Question 11. Types of Components in React?
+## Question 11. What are the Types of Components in React?
 **Answer:** React provides different types of components for building UI. These components help in organizing the code, reusing logic, and improving the maintainability of applications.
 
 ---
