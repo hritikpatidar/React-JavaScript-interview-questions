@@ -17,7 +17,73 @@
 | 11  | [What are the Types of Components in React?](#question-11-what-are-the-types-of-components-in-react)                   |
 
 
+## 🚀 React Project Installation (Using Vite – Recommended)
 
+Follow these steps to set up a modern React project using **Vite**:
+
+### 1. Install Node.js
+Make sure Node.js (v14.18+ or v16+) is installed. Download it from [https://nodejs.org](https://nodejs.org).
+
+### 2. Create a React + Vite App
+
+```js
+npm create vite@latest my-app -- --template react
+```
+Or:
+```js
+yarn create vite my-app --template react
+```
+### 3. Navigate into the Project Directory
+```js
+cd my-app
+```
+### 4. Install Dependencies
+```js
+npm install
+```
+Or:
+```js
+yarn
+```
+### 5. Start the Development Server
+```js
+npm run dev
+```
+Or:
+```js
+yarn dev
+```
+Your app will be running at http://localhost:5173 by default.
+
+## ⚡ React Project Installation (Using Next.js – Recommended for Production)
+
+Follow these steps to create a React project with **Next.js**, a powerful React framework with built-in routing, SSR, and more.
+
+### 1. Install Node.js
+Make sure you have Node.js installed (v16.8 or higher recommended). Download it from [https://nodejs.org](https://nodejs.org).
+
+### 2. Create a New Next.js App
+
+```js
+npx create-next-app@latest my-next-app
+```
+Or using Yarn:
+```js
+yarn create next-app my-next-app
+```
+### 3. Navigate into the Project Directory
+```js
+cd my-next-app
+```
+### 4. Run the Development Server
+```js
+npm run dev
+```
+Or:
+```js
+yarn dev
+```
+Your app will be live at http://localhost:3000.
 
 ## Question 1:  What is Reactjs?
 **Answer:** **React.js** is a **popular JavaScript library** for building **interactive user interfaces (UIs)**. Developed and maintained by **Meta (formerly Facebook)**, React allows developers to create **reusable UI components**, manage the state efficiently, and build scalable front-end applications.
