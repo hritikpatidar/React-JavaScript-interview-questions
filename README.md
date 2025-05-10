@@ -2,12 +2,14 @@
 
 # Table of Contents
 
-| No. | Question                                                                 |
-|-----|--------------------------------------------------------------------------|
-| 1   | [What is ReactJS?](#question-1-what-is-reactjs)                          |
-| 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained) |
+| No. | Question                                                                                                     |
+| --- | ------------------------------------------------------------------------------------------------------------ |
+| 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                              |
+| 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained)     |
 | 3   | [Why can't we use `async` directly in `useEffect`?](#question-3-why-cant-we-use-async-directly-in-useeffect) |
-| 4   | [What is Props?](#question-4-what-is-props)                              |
+| 4   | [What is Props?](#question-4-what-is-props)                                                                  |
+| 5   | [What is a Higher-Order Component (HOC)?](#question-5-what-is-a-higher-order-component-hoc)                  |
+| 6   | [What is Props in React?](#question-6-what-is-props-in-react)|
 
 
 
@@ -192,4 +194,82 @@ useEffect(() => {
 }, []);
 ```
 ## Question 4: what is props?
-**Answer**
+**Answer:**
+
+## Question 5: What is a Higher-Order Component (HOC)?
+
+**Answer:** A **Higher-Order Component (HOC)** is a pattern in React that allows you to reuse component logic. It is a function that takes a component and returns a new component with additional props or behavior. HOCs don't modify the original component; instead, they return a new component with enhanced functionality.
+
+### Use cases for HOCs:
+- Code reuse
+- Conditional rendering
+- Adding state or side effects
+- Reusing lifecycle methods
+- Authentication and authorization logic
+
+### Example of a Higher-Order Component
+
+Here's a simple example of a Higher-Order Component (HOC):
+
+```jsx
+// HOC function that adds a message prop
+const withMessage = (WrappedComponent) => {
+  return function EnhancedComponent(props) {
+    return <WrappedComponent {...props} message="Hello from HOC!" />;
+  };
+};
+
+// Simple component
+function Greeting(props) {
+  return <h2>{props.message}</h2>;
+}
+
+// Using the HOC
+const EnhancedGreeting = withMessage(Greeting);
+
+// Usage in App
+function App() {
+  return (
+    <div>
+      <EnhancedGreeting />
+    </div>
+  );
+}
+
+export default App;
+```
+```js
+//output
+Hello from HOC!
+```
+
+## Question 6: What is Props in React?
+
+**Answer:** In React, **props** (short for "properties") are used to pass **data from parent to child components**. They make components **dynamic and reusable**.
+
+###  Key Points:
+- Props are passed like attributes to components.
+- Props are **read-only** (immutable).
+- Useful for component reusability and configuration.
+
+###  Example:
+
+```jsx
+function Welcome(props) {
+  return <h2>Hello, {props.name}!</h2>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Ritik" />
+      <Welcome name="John" />
+    </div>
+  );
+}
+```
+```js
+//output
+Hello, Ritik!
+Hello, John!
+```
