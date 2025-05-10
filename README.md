@@ -1,28 +1,33 @@
-# 📚 React JavaScript Interview Questions – Table of Contents
+# 📚 React & JavaScript Interview Questions & Answers
+
+# Table of Contents
+
+| No. | Question                                                                 |
+|-----|--------------------------------------------------------------------------|
+| 1   | [What is ReactJS?](#question-1-what-is-reactjs)                          |
+| 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained) |
+| 3   | [Why can't we use `async` directly in `useEffect`?](#question-3-why-cant-we-use-async-directly-in-useeffect) |
+| 4   | [What is Props?](#question-4-what-is-props)                              |
 
 
-1. [📘 What is ReactJS? Latest Version and Key Features in React 18](#question-1-what-is-reactjslatest-version-and-key-features-in-react-18)
-2. [🔧 What are Hooks and Important Hooks Explained](#question-2-what-is-hooks-and-discribe-imp-hooks)
-3. [❓ Why can't we use `async` directly in `useEffect`](#question-3-why-cant-we-use-async-directly-in-useeffect)
 
-# 📚 React JavaScript Interview Questions
 
-## Question 1: 📘 What is Reactjs📦Latest Version and Key Features in React 18?
+## Question 1:  What is Reactjs?
 **Answer:** **React.js** is a **popular JavaScript library** for building **interactive user interfaces (UIs)**. Developed and maintained by **Meta (formerly Facebook)**, React allows developers to create **reusable UI components**, manage the state efficiently, and build scalable front-end applications.
-## ✅ Key Points:
+##  Key Points:
 - React.js is **not a framework**, but a **library focused on the "View" layer** in the MVC architecture.
 - It uses a **virtual DOM** for efficient UI rendering, which improves performance.
 - Supports building **component-based architecture**, making code **reusable and easier to maintain**.
 - It allows **declarative UI development**, meaning you describe *what* the UI should look like, and React handles the rendering.
 
-## 🔍 Core Features of React:
+## Core Features of React:
 - **JSX**: JavaScript syntax extension that lets you write HTML inside JavaScript.
 - **Virtual DOM**: Optimized way to update the actual DOM only where needed.
 - **Components**: Independent and reusable pieces of code.
 - **Unidirectional Data Flow**: Data flows in one direction, making state changes predictable.
 - **Hooks**: Functions like `useState`, `useEffect` etc., for managing state and lifecycle in functional components.
 
-## 💡 Example Code:
+## Example Code:
 ```jsx
 import React, { useState } from 'react';
 
@@ -40,7 +45,7 @@ function Counter() {
 export default Counter;
 ```
 
-## Question 2: What is Hooks and discribe imp hooks?
+## Question 2: What is Hooks and Important Hooks Explained	?
 **Answer:** React Hooks allow you to use **state** and **other React features** in functional components.
 
 ## 🔹 1. `useState`
@@ -186,3 +191,5 @@ useEffect(() => {
   fetchData();
 }, []);
 ```
+## Question 4: what is props?
+**Answer**
