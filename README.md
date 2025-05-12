@@ -7,16 +7,21 @@
 |    | [React Project Installation Using Vite Recommended](#question-react-project-installation-using-vite-recommended)                                               |
 |   | [React Project Installation Using Next.js Recommended for Production](#question--react-project-installation-using-nextjs-recommended-for-production)                                               |
 | 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                                        |
-| 2   | [What are Hooks and Important Hooks Explained?](#question-2-what-is-hooks-and-important-hooks-explained)               |
-| 3   | [Why can't we use `async` directly in `useEffect`?](#question-3-why-cant-we-use-async-directly-in-useeffect)           |
-| 4   | [What is Props?](#question-4-what-is-props)                                                                            |
-| 5   | [What is a Higher-Order Component (HOC)?](#question-5-what-is-a-higher-order-component-hoc)                            |
-| 6   | [What is State in React?](#question-6-what-is-state-in-react)                                                          |
-| 7   | [What is Props in React?](#question-7-what-is-props-in-react)                                                          |
-| 8   | [What is Prop Drilling in React?](#question-8-what-is-prop-drilling-in-react)                                          |
-| 9   | [What is Context API in React?](#question-9-what-is-context-api-in-react)                                              |
-| 10  | [What are the Lifecycle Methods of React Components?](#question-10-what-are-the-lifecycle-methods-of-react-components) |
-| 11  | [What are the Types of Components in React?](#question-11-what-are-the-types-of-components-in-react)                   |
+| 2   | [What is the history behind React evolution?](#question-2-what-is-the-history-behind-react-evolution)               |
+| 3  | [What Are the Major Features of React?](#question-3-what-are-the-major-features-of-react)                   |
+| 4  | [What is the Difference Between Element and Component in React?](#question-4-what-is-the-difference-between-element-and-component-in-react)                   |
+| 5  | [How to Create Components in React?](#question-5-how-to-create-components-in-react)                   |
+| 6   | [What are Hooks and Important Hooks Explained?](#question-6-what-is-hooks-and-important-hooks-explained)               |
+| 7   | [Why can't we use `async` directly in `useEffect`?](#question-7-why-cant-we-use-async-directly-in-useeffect)           |
+| 8   | [What is a Higher-Order Component (HOC)?](#question-8-what-is-a-higher-order-component-hoc)                            |
+| 9   | [What is State in React?](#question-9-what-is-state-in-react)                                                          |
+| 10   | [What is Props in React?](#question-10-what-is-props-in-react)                                                          |
+| 11   | [What is the Difference Between State and Props?](#question-11-what-is-the-difference-between-state-and-props)                                                          |
+| 12   | [What is Prop Drilling in React?](#question-12-what-is-prop-drilling-in-react)                                          |
+| 13   | [What is Context API in React?](#question-13-what-is-context-api-in-react)                                              |
+| 14  | [What are the Lifecycle Methods of React Components?](#question-14-what-are-the-lifecycle-methods-of-react-components) |
+| 15  | [What are the Types of Components in React?](#question-15-what-are-the-types-of-components-in-react)                   |
+
 
 
 ## Question: React Project Installation Using Vite Recommended
@@ -87,6 +92,9 @@ yarn dev
 ```
 Your app will be live at http://localhost:3000.
 
+### [🔝 Back to Top](#table-of-contents)
+
+ 
 ## Question 1:  What is Reactjs?
 **Answer:** **React.js** is a **popular JavaScript library** for building **interactive user interfaces (UIs)**. Developed and maintained by **Meta (formerly Facebook)**, React allows developers to create **reusable UI components**, manage the state efficiently, and build scalable front-end applications.
 ###  Key Points:
@@ -120,8 +128,140 @@ function Counter() {
 
 export default Counter;
 ```
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 2: What is Hooks and Important Hooks Explained	?
+
+## Question 2: What is the history behind React evolution?
+**Answer:** React was developed by **Jordan Walke**, a software engineer at **Facebook**, and was first deployed on Facebook’s newsfeed in **2011**, and later on Instagram in **2012**. It officially became open-source in **May 2013**.
+
+### 🚀 Key Milestones in React's Evolution:
+
+| Year | Milestone                                         |
+|------|---------------------------------------------------|
+| 2013 | React was open-sourced by Facebook                |
+| 2015 | React 0.14 introduced functional components        |
+| 2016 | React Fiber architecture was announced             |
+| 2017 | React 16 (Fiber) released with better performance |
+| 2019 | React Hooks introduced in React 16.8               |
+| 2020 | React 17 – no new features, mainly upgrades        |
+| 2022 | React 18 released with **Concurrent Mode**, **automatic batching**, and **startTransition** API |
+
+### 📌 Why React Became Popular:
+- ✅ Component-based architecture
+- ✅ Virtual DOM for fast rendering
+- ✅ One-way data flow
+- ✅ Reusable components
+- ✅ Huge community and ecosystem
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 3: What Are the Major Features of React?
+**Answer:** React offers a variety of modern features that make it one of the most powerful and popular JavaScript libraries for building user interfaces.
+
+### 🔹 1. JSX (JavaScript XML)
+JSX is a syntax extension for JavaScript that allows you to write HTML-like code directly in your JavaScript files. It improves readability and structure.
+
+```jsx
+const element = <h1>Hello, React!</h1>;
+```
+### 🔹 2. Component-Based Architecture
+React encourages breaking the UI into independent, reusable components. Each component manages its own logic and rendering, making development scalable and maintainable.
+
+### 🔹 3. Virtual DOM
+React uses a virtual DOM to improve performance. When the state of an object changes, React updates only that object in the virtual DOM and then efficiently updates the real DOM.
+
+### 🔹 4. One-Way Data Binding
+React implements one-way data binding, meaning data flows from parent to child components. This makes it easier to debug and increases control over the app.
+
+### 🔹 5.Hooks (From React 16.8+)
+Hooks allow you to use state and other React features without writing class components. Common hooks include:
+- useState
+- useEffect
+- useContext
+- useRef
+- useReducer
+
+### 🔹 6. Declarative UI
+React allows developers to design views for each state of the application. It will efficiently update and render just the right components when data changes.
+
+### 🔹 7. Rich Ecosystem
+React has a rich ecosystem that includes tools and libraries like:
+- React Router for routing
+- Redux for state management
+- Next.js for server-side rendering
+- esting tools like Jest and React Testing Library
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 4: What is the Difference Between Element and Component in React?
+**Answer:** Understanding the difference between **Element** and **Component** is essential for grasping how React applications are built and rendered.
+
+| Feature        | Element                                      | Component                                                |
+|----------------|----------------------------------------------|-----------------------------------------------------------|
+| **Definition** | A plain object representing a DOM node or another component | A function or class that returns React elements |
+| **Creation**   | Created using JSX like `<div />`             | Created using a function or class like `function App() { return <div /> }` |
+| **Reusability**| Not reusable by itself                       | Reusable pieces of UI                                     |
+| **Rendering**  | Describes what to render                     | Can hold logic and state, and then render elements        |
+| **Example**    | `const element = <h1>Hello</h1>;`            | `function Greet() { return <h1>Hello</h1>; }`             |
+
+### 🔸 React Element
+A React Element is the smallest building block in a React app. It describes what you want to see on the screen.
+
+```jsx
+const element = <h1>Hello World</h1>;
+```
+### 🔸 React Component
+A Component is a function or class that returns elements. It can manage its own logic, state, and rendering.
+
+```jsx
+function Welcome() {
+  return <h1>Hello from Component</h1>;
+}
+```
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 5: How to Create Components in React?
+**Answer:** In React, components are the building blocks of your UI. There are two main ways to create components:
+
+---
+
+### 🔹 1. Functional Components (Recommended)
+
+Functional components are JavaScript functions that return JSX.
+
+```jsx
+// Functional Component
+function Greeting() {
+  return <h1>Hello from Functional Component!</h1>;
+}
+```
+Or using arrow function:
+```js
+const Greeting = () => {
+  return <h1>Hello from Arrow Function!</h1>;
+};
+```
+
+### 🔹 2. Class Components (Legacy)
+Class components are ES6 classes that extend React.Component and must include a render() method.
+```jsx
+import React, { Component } from 'react';
+
+class Greeting extends Component {
+  render() {
+    return <h1>Hello from Class Component!</h1>;
+  }
+}
+
+```
+
+#### 🔸 Which One Should You Use?
+React recommends using functional components with Hooks, as they are simpler and offer more flexibility.
+
+### [🔝 Back to Top](#table-of-contents)
+
+
+## Question 6: What is Hooks and Important Hooks Explained	?
 **Answer:** React Hooks allow you to use **state** and **other React features** in functional components.
 
 ### 🔹 1. `useState`
@@ -253,8 +393,10 @@ function InputFocus() {
 }
 
 ```
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 3: Why can't we use `async` directly in `useEffect`?
+
+## Question 7: Why can't we use `async` directly in `useEffect`?
 
 **Answer:**  The callback function passed to `useEffect` must be **synchronous**. If you make it `async`, it returns a **Promise**, which React would interpret as a cleanup function — but cleanup functions must be synchronous as well.  
 To handle asynchronous code, define an `async` function **inside** the `useEffect` and then **call it**.
@@ -267,10 +409,10 @@ useEffect(() => {
   fetchData();
 }, []);
 ```
-## Question 4: what is props?
-**Answer:**
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 5: What is a Higher-Order Component (HOC)?
+
+## Question 8: What is a Higher-Order Component (HOC)?
 
 **Answer:** A **Higher-Order Component (HOC)** is a pattern in React that allows you to reuse component logic. It is a function that takes a component and returns a new component with additional props or behavior. HOCs don't modify the original component; instead, they return a new component with enhanced functionality.
 
@@ -316,8 +458,10 @@ export default App;
 //output
 Hello from HOC!
 ```
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 6: What is State in React?
+
+## Question 9: What is State in React?
 
 **Answer:** In React, **state** is an object that represents the parts of the app that can change. Each component can maintain its own state, and when the state changes, React re-renders the component to reflect the updated UI.
 
@@ -345,8 +489,10 @@ function Counter() {
 
 export default Counter;
 ```
- 
-## Question 7: What is Props in React?
+ ### [🔝 Back to Top](#table-of-contents)
+
+
+## Question 10: What is Props in React?
 
 **Answer:** In React, **props** (short for "properties") are used to pass **data from parent to child components**. They make components **dynamic and reusable**.
 
@@ -376,8 +522,44 @@ function App() {
 Hello, Ritik!
 Hello, John!
 ```
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 8: What is Prop Drilling in React?
+## Question 11: What is the Difference Between State and Props?
+**Answer:** In React, both **state** and **props** are used to manage data in components, but they serve different purposes.
+
+| Feature     | `props`                              | `state`                                   |
+|-------------|--------------------------------------|--------------------------------------------|
+| Definition  | Read-only data passed to a component | Data that is managed within the component  |
+| Mutability  | Immutable (cannot be changed by child) | Mutable (can be updated using `setState`) |
+| Ownership   | Controlled by the parent component   | Controlled by the component itself         |
+| Usage       | Used to pass data and functions      | Used for managing local data and UI logic  |
+| Accessibility | Available in functional and class components | Same, but commonly used with Hooks (`useState`) |
+
+---
+
+### 🔹 Example: Props
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+```
+### 🔸 Example: State
+```jsx
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
+}
+
+```
+📌 Use props to send data to a component and state to manage data inside a component.
+
+### [🔝 Back to Top](#table-of-contents)
+
+
+## Question 12: What is Prop Drilling in React?
 
 **Answer:** **Prop Drilling** refers to the process of passing data from a parent component to deeply nested child components via props — even if intermediate components don't need that data but have to pass it along.
 
@@ -408,8 +590,10 @@ function GrandChild({ user }) {
   return <p>Hello, {user}</p>;
 }
 ```
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 9: What is Context API in React?
+
+## Question 13: What is Context API in React?
 **Answer:** The **Context API** in React is a built-in solution to manage **global state** or **shared data** between components **without prop drilling** (manually passing props through each component).
 
 It allows you to **create a context**, **provide** it at a high level, and then **consume** it anywhere in your component tree.
@@ -461,8 +645,10 @@ function Dashboard() {
 - Removes the need to pass props down multiple levels.
 - Improves component reusability and decouples data access.
 
+### [🔝 Back to Top](#table-of-contents)
 
-## Question 10: What are the Lifecycle Methods of React Components?
+
+## Question 14: What are the Lifecycle Methods of React Components?
 **Answer:** In React class components, **lifecycle methods** are special methods that get called at different phases of a component’s life. These methods allow you to run code at specific points in a component's lifecycle — such as when it's **created**, **updated**, or **destroyed**.
 
 ### 🔁 Lifecycle Phases:
@@ -521,7 +707,10 @@ React Hooks provide similar lifecycle capabilities in functional components:
 
 ---
 
-## Question 11. What are the Types of Components in React?
+### [🔝 Back to Top](#table-of-contents)
+
+
+## Question 15. What are the Types of Components in React?
 **Answer:** React provides different types of components for building UI. These components help in organizing the code, reusing logic, and improving the maintainability of applications.
 
 ---
@@ -629,3 +818,6 @@ function UncontrolledForm() {
 - Data is stored in the DOM.
 - Uses ref to get values.
 - Less React code, but harder to manage validations or dynamic changes.
+
+### [🔝 Back to Top](#table-of-contents)
+
