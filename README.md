@@ -36,7 +36,7 @@ Make sure Node.js (v14.18+ or v16+) is installed. Download it from [https://node
 ```js
 npm create vite@latest my-app -- --template react
 ```
-Or:
+Or
 ```js
 yarn create vite my-app --template react
 ```
@@ -48,7 +48,7 @@ cd my-app
 ```js
 npm install
 ```
-Or:
+Or
 ```js
 yarn
 ```
@@ -56,7 +56,7 @@ yarn
 ```js
 npm run dev
 ```
-Or:
+Or
 ```js
 yarn dev
 ```
@@ -74,7 +74,7 @@ Make sure you have Node.js installed (v16.8 or higher recommended). Download it 
 ```js
 npx create-next-app@latest my-next-app
 ```
-Or using Yarn:
+Or using Yarn
 ```js
 yarn create next-app my-next-app
 ```
@@ -86,7 +86,7 @@ cd my-next-app
 ```js
 npm run dev
 ```
-Or:
+Or
 ```js
 yarn dev
 ```
