@@ -1,4 +1,4 @@
-# 📚 React & JavaScript Interview Questions & Answers
+# 📚 React Interview Questions & Answers
 
 # Table of Contents
 
@@ -6,6 +6,7 @@
 | --- | ---------------------------------------------------------------------------------------------------------------------- |
 |    | [React Project Installation Using Vite Recommended](#question-react-project-installation-using-vite-recommended)                                               |
 |   | [React Project Installation Using Next.js Recommended for Production](#question--react-project-installation-using-nextjs-recommended-for-production)                                               |
+|    | Core React                                                                      |
 | 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                                        |
 | 2   | [What is the history behind React evolution?](#question-2-what-is-the-history-behind-react-evolution)               |
 | 3  | [What Are the Major Features of React?](#question-3-what-are-the-major-features-of-react)                   |
@@ -21,6 +22,18 @@
 | 13   | [What is Context API in React?](#question-13-what-is-context-api-in-react)                                              |
 | 14  | [What are the Lifecycle Methods of React Components?](#question-14-what-are-the-lifecycle-methods-of-react-components) |
 | 15  | [What are the Types of Components in React?](#question-15-what-are-the-types-of-components-in-react)                   |
+| 16  | [What is the difference between HTML and React event handling?](#question-16-what-is-the-difference-between-html-and-react-event-handling)                   |
+| 17  | [What Are Synthetic Events?](#question-17-what-are-synthetic-events)                   |
+| 18  | [What Are Inline Conditional Expressions?](#question-18-what-are-inline-conditional-expressions)                   |
+| 19  | [What is Virtual DOM?](#question-19-what-is-virtual-dom)                   |
+| 20  | [What is the difference between Shadow DOM and Virtual DOM?](#question-20-what-is-the-difference-between-shadow-dom-and-virtual-dom)                   |
+| 21  | [What is React Fiber?](#question-21-what-is-react-fiber)                   |
+| 22  | [What is children prop?](#question-22-what-is-children-prop)                   |
+| 23  | [How to write comments in React?](#question-23-how-to-write-comments-in-react)                   |
+| 24  | [What is Lifting State Up in React?](#question-24-what-is-lifting-state-up-in-react)                   |
+| 25  | [What is the DOM?](#question-25-what-is-the-dom)                   |
+|   | Redux               |
+| 1  | [What is Redux?](#question-1-what-is-redux)                   |
 
 
 
@@ -710,7 +723,7 @@ React Hooks provide similar lifecycle capabilities in functional components:
 ### [🔝 Back to Top](#table-of-contents)
 
 
-## Question 15. What are the Types of Components in React?
+## Question 15: What are the Types of Components in React?
 **Answer:** React provides different types of components for building UI. These components help in organizing the code, reusing logic, and improving the maintainability of applications.
 
 ---
@@ -821,3 +834,296 @@ function UncontrolledForm() {
 
 ### [🔝 Back to Top](#table-of-contents)
 
+
+## Question 16:  What is the difference between HTML and React event handling?
+**Answer:** This section explains the key differences between traditional HTML event handling and event handling in React.
+
+---
+
+### 📌 Difference Between HTML and React Event Handling
+
+| Feature                      | HTML Event Handling                           | React Event Handling                           |
+|-----------------------------|-----------------------------------------------|------------------------------------------------|
+| **Syntax**                  | Uses lowercase event names with strings       | Uses camelCase event names with functions      |
+| **Example**                 | `<button onclick="handleClick()">Click</button>` | `<button onClick={handleClick}>Click</button>` |
+| **Function Binding**        | Not required                                  | Often requires binding in class components     |
+| **Inline JavaScript**       | Allowed (`onclick="alert('Hi')"` )            | Not recommended; uses JSX expression `{}`      |
+| **Event Object**            | Accessed via global `event` object            | Automatically passed as argument in handler    |
+| **Cross-browser Support**   | Developers manage differences manually        | React handles cross-browser inconsistencies    |
+| **Event Propagation**       | Handled with `event.cancelBubble` or `stopPropagation()` | React uses synthetic events with consistent behavior |
+
+---
+
+✅ **Conclusion**  
+React provides a more structured and consistent way to handle events across all browsers using its SyntheticEvent system, while HTML relies on native DOM methods and event handling practices.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 17: What Are Synthetic Events?
+**Answer:** Synthetic Events are React’s cross-browser wrapper around the native browser events. They are part of React’s event system and provide a consistent interface for all supported browsers.
+
+---
+
+### 📦 Key Features
+
+- 🧩 **Cross-browser compatibility**: Works the same across all major browsers.
+- ⚙️ **Normalized API**: Mimics the native event API for consistency.
+- ♻️ **Performance optimization**: React reuses events via a pooling system (deprecated in React 17+).
+- 🧼 **Unified behavior**: Prevents bugs due to differences in native event implementations.
+
+---
+
+### 💡 Example Code:
+
+```jsx
+function MyButton() {
+  const handleClick = (event) => {
+    console.log('Button clicked!', event.type); // Outputs: click
+    console.log(event.nativeEvent); // Access native DOM event if needed
+  };
+
+  return <button onClick={handleClick}>Click Me</button>;
+}
+```
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 18: What Are Inline Conditional Expressions?
+
+Inline conditional expressions are short logic expressions used to determine what should be rendered inside JSX without using full `if-else` statements.
+
+---
+
+### Common Types
+
+### 1. **Ternary Operator (`condition ? true : false`)**
+
+```jsx
+{isLoggedIn ? <Dashboard /> : <Login />}
+```
+### 2. Logical AND Operator (&&)
+
+```jsx
+{isAdmin && <AdminPanel />}
+```
+### 3. Logical OR Operator (||)
+
+```jsx
+{userName || "Guest"}
+```
+
+### 💡 Example Code:
+```jsx
+function Greeting({ isMorning }) {
+  return (
+    <h1>
+      {isMorning ? "Good Morning!" : "Good Evening!"}
+    </h1>
+  );
+}
+```
+
+### Summary
+Inline conditional expressions help you:
+- Write cleaner and shorter code
+- Avoid unnecessary if-else blocks
+- Make JSX more readable
+
+## Question 19: What is Virtual DOM?
+**Answer:** The **Virtual DOM (VDOM)** is a **lightweight JavaScript representation** of the real DOM. It is a concept used by libraries like **React** to optimize UI rendering and improve application performance.
+
+---
+
+### 🧠 How It Works
+
+1. React creates a **Virtual DOM** whenever there is a change in state or props.
+2. It compares the new Virtual DOM with the previous one using a **diffing algorithm**.
+3. React then calculates the **minimum number of updates** required to reflect the changes in the **actual DOM**.
+4. Only the necessary updates are applied to the real DOM (this process is called **reconciliation**).
+
+---
+
+### 🚀 Benefits of Virtual DOM
+
+- Improves **performance** by reducing direct DOM manipulations.
+- Enables **efficient updates** to complex UI structures.
+- Provides a **smoother user experience** by applying minimal changes.
+- Makes the UI **declarative and predictable**.
+
+---
+
+### 🖼️ Visual Flow
+
+```plaintext
+State/Props Change
+       ↓
+ New Virtual DOM
+       ↓
+Compare with Previous VDOM (Diffing)
+       ↓
+Update Real DOM with Minimum Changes (Reconciliation)
+```
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 20: What is the difference between Shadow DOM and Virtual DOM?
+**Answer:** The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The Virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 21: What is React Fiber?
+
+**Answer:** **React Fiber** is the new reconciliation engine introduced in **React 16** that improves how React updates the DOM.
+
+### 🔹 Key Points:
+- React Fiber breaks rendering into **small units of work**.
+- Allows **pausing, resuming**, or **aborting** rendering tasks.
+- Enables **prioritized rendering** — urgent tasks like user input are handled before background updates.
+- Powers features like **Concurrent Mode** for smoother, more responsive user interfaces.
+- Designed to improve the **performance and flexibility** of React apps.
+
+> 🚀 Think of Fiber as the smart brain behind React’s fast and efficient rendering process.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 22: What is children prop?
+**Answer:** Children is a prop that allows you to pass components as data to other components, just like any other prop you use. Component tree put between component's opening and closing tag will be passed to that component as children prop.
+A simple usage of children prop looks as below,
+
+```jsx
+function MyDiv({ children }){
+    return (
+      <div>
+        {children}
+      </div>;
+    );
+}
+
+export default function Greeting() {
+  return (
+    <MyDiv>
+      <span>{"Hello"}</span>
+      <span>{"World"}</span>
+    </MyDiv>
+  );
+}
+```
+<details>
+  <summary>See Class</summary>
+
+  ```js
+  const MyDiv = React.createClass({
+    render: function () {
+      return <div>{this.props.children}</div>;
+    },
+  });
+
+  ReactDOM.render(
+    <MyDiv>
+      <span>{"Hello"}</span>
+      <span>{"World"}</span>
+    </MyDiv>,
+    node
+  );
+```
+</details>
+
+**Note**: There are several methods available in the legacy React API to work with this prop. These include React.Children.map, React.Children.forEach, React.Children.count, React.Children.only, React.Children.toArray.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 23: How to write comments in React?
+**Answer:** In React, you can write comments both **inside JSX** and **outside JSX (in plain JavaScript)**.
+
+### ✅ Comments in JavaScript (outside JSX)
+
+Use standard JavaScript comment syntax:
+
+```js
+// This is a single-line comment
+
+/*
+  This is a multi-line comment
+*/
+```
+### ✅ Comments in JSX (inside return block)
+Use curly braces {} and block comment syntax /* */ inside JSX:
+```js
+return (
+  <div>
+    {/* This is a comment inside JSX */}
+    <h1>Hello, World!</h1>
+  </div>
+);
+```
+### ❌ Invalid JSX Comment (Don't Use This)
+```js
+<!-- This is not valid in JSX -->
+```
+ ⚠️ JSX does not support HTML-style (<!-- -->) comments.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 24: What is Lifting State Up in React?
+**Answer:** **Lifting State Up** is a common pattern in React where state is moved from child components to their closest common parent. This allows multiple child components to share and coordinate based on the same state.
+
+### It helps in:
+- Sharing state between sibling components.
+- Centralizing state management in a parent.
+- Following React's unidirectional data flow.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 25: What is the DOM?
+**Answer:** **DOM** stands for **Document Object Model**.  
+It is a programming interface for web documents like HTML and XML.
+
+The DOM represents the structure of a web page as a **tree of objects**, allowing developers to access and manipulate HTML elements using JavaScript.
+
+### 🌳 DOM Structure Example
+
+Given this HTML code:
+
+```html
+<html>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+
+The DOM represents it as:
+```js
+Document
+ └── html
+      └── body
+           ├── h1 → "Hello World"
+           └── p  → "This is a paragraph."
+
+```
+🛠️ DOM Manipulation (JavaScript Example)
+```jsx
+// Select the <h1> element
+const heading = document.querySelector('h1');
+
+// Change its content
+heading.textContent = "Hello DOM!";
+```
+### ✅Key Features of DOM
+
+- The DOM is dynamic and updates in real-time.
+- JavaScript can access, modify, add, or delete elements using the DOM.
+- Common DOM methods:
+  1. getElementById()
+  2. querySelector()
+  3. createElement()
+  4. appendChild()
+  5. removeChild()
+
+### 📌 Summary 
+
+The DOM allows developers to create interactive and dynamic websites by providing a way to interact with the structure and content of a web page.
+
+### [🔝 Back to Top](#table-of-contents)
+
+## Question 1: What is Redux?
