@@ -70,6 +70,7 @@
 | 28  | [How would you implement undo/redo functionality in Redux?](#question-28-how-would-you-implement-undoredo-functionality-in-redux)                   |
 | 29  | [How do you persist Redux state across sessions?](#question-29-how-do-you-persist-redux-state-across-sessions)                   |
 | 30  | [Have you ever encountered circular dependencies in Redux modules? How did you solve it?](#question-30-have-you-ever-encountered-circular-dependencies-in-redux-modules-how-did-you-solve-it)                   |
+| 31  | [Can I dispatch an action in reducer?](#question-31-can-i-dispatch-an-action-in-reducer)                   |
 
 
 
@@ -1418,3 +1419,12 @@ console.log(store.getState()); // Access the current state
 **Answer:** 
 
 ### [🔝 Back to Top](#redux-questions)
+
+
+
+## Question 31: Can I dispatch an action in reducer?
+**Answer:** In Redux, a reducer is a pure function that takes the current state and an action as input and returns a new state. Since reducers must be free of side effects, you cannot dispatch actions inside them — dispatching is considered a side effect and should only be done from components or middleware like redux-thunk or redux-saga.
+
+### [🔝 Back to Top](#redux-questions)
+
+
