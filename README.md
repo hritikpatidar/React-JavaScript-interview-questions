@@ -6,7 +6,10 @@
 | --- | ---------------------------------------------------------------------------------------------------------------------- |
 |    | [React Project Installation Using Vite Recommended](#question-react-project-installation-using-vite-recommended)                                               |
 |   | [React Project Installation Using Next.js Recommended for Production](#question--react-project-installation-using-nextjs-recommended-for-production)                                               |
-|    | Core React                                                                      |
+## Core React
+
+| No. | Question                                 |
+|-----|------------------------------------------|
 | 1   | [What is ReactJS?](#question-1-what-is-reactjs)                                                                        |
 | 2   | [What is the history behind React evolution?](#question-2-what-is-the-history-behind-react-evolution)               |
 | 3  | [What Are the Major Features of React?](#question-3-what-are-the-major-features-of-react)                   |
@@ -32,8 +35,41 @@
 | 23  | [How to write comments in React?](#question-23-how-to-write-comments-in-react)                   |
 | 24  | [What is Lifting State Up in React?](#question-24-what-is-lifting-state-up-in-react)                   |
 | 25  | [What is the DOM?](#question-25-what-is-the-dom)                   |
-|   | Redux               |
-| 1  | [What is Redux?](#question-1-what-is-redux)                   |
+
+## Redux Questions
+
+| No. | Question                                 |
+|-----|------------------------------------------|
+| 1  | [What is Flux?](#question-1-what-is-flux)                   |
+| 2  | [What is Redux?](#question-2-what-is-redux)                   |
+| 3  | [ Why Use Redux?](#question-3-why-use-redux)                   |
+| 4  | [ What is a store in Redux?](#question-4-what-is-a-store-in-redux)                   |
+| 5  | [ What is an action in Redux?](#question-5-what-is-an-action-in-redux)                   |
+| 6  | [What is a reducer in Redux?](#question-6-what-is-a-reducer-in-redux)                   |
+| 7  | [What is the role of dispatch in Redux?](#question-7-what-is-the-role-of-dispatch-in-redux)                   |
+| 8  | [How do you connect a React component with Redux?](#question-8-how-do-you-connect-a-react-component-with-redux)                   |
+| 9  | [What is the use of useSelector and useDispatch in Redux?](#question-9-what-is-the-use-of-useselector-and-usedispatch-in-redux)                   |
+| 10  | [What is the difference between local state and Redux store?](#question-10-what-is-the-difference-between-local-state-and-redux-store)                   |
+| 11  | [What are middleware in Redux? Can you name a few?](#question-11-what-are-middleware-in-redux-can-you-name-a-few)                   |
+| 12  | [What is Redux DevTools and how does it help in debugging?](#question-12-what-is-redux-devtools-and-how-does-it-help-in-debugging)                   |
+| 13  | [What are pure functions and why should reducers be pure?](#question-13-what-are-pure-functions-and-why-should-reducers-be-pure)                   |
+| 14  | [How do you initialize the Redux store in a React app?](#question-14-how-do-you-initialize-the-redux-store-in-a-react-app)                   |
+| 15  | [Can you explain the Redux data flow cycle?](#question-15-can-you-explain-the-redux-data-flow-cycle)                   |
+| 16  | [What are the pros and cons of using Redux?](#question-16-what-are-the-pros-and-cons-of-using-redux)                   |
+| 17  | [How does Redux handle asynchronous operations?](#question-17-how-does-redux-handle-asynchronous-operations)                   |
+| 18  | [What is redux-thunk and how does it work?](#question-18-what-is-redux-thunk-and-how-does-it-work)                   |
+| 19  | [What is the difference between redux-thunk and redux-saga?](#question-19-what-is-the-difference-between-redux-thunk-and-redux-saga)                   |
+| 20  | [What are some alternatives to Redux for state management?](#question-20-what-are-some-alternatives-to-redux-for-state-management)                   |
+| 21  | [How would you optimize performance in a large Redux application?](#question-21-how-would-you-optimize-performance-in-a-large-redux-application)                   |
+| 22  | [How do you handle large and deeply nested state in Redux?](#question-22-how-do-you-handle-large-and-deeply-nested-state-in-redux)                   |
+| 23  | [What are selectors and why are they useful?](#question-23-what-are-selectors-and-why-are-they-useful)                   |
+| 24  | [How would you structure a scalable Redux folder architecture?](#question-24-how-would-you-structure-a-scalable-redux-folder-architecture)                   |
+| 25  | [What are some common anti-patterns in Redux and how do you avoid them?](#question-25-what-are-some-common-anti-patterns-in-redux-and-how-do-you-avoid-them)                   |
+| 26  | [Can you explain Redux Toolkit and its benefits?](#question-26-can-you-explain-redux-toolkit-and-its-benefits)                   |
+| 27  | [What is createSlice() in Redux Toolkit? How is it different from traditional Redux?](#question-27-what-is-createslice-in-redux-toolkit-how-is-it-different-from-traditional-redux)                   |
+| 28  | [How would you implement undo/redo functionality in Redux?](#question-28-how-would-you-implement-undoredo-functionality-in-redux)                   |
+| 29  | [How do you persist Redux state across sessions?](#question-29-how-do-you-persist-redux-state-across-sessions)                   |
+| 30  | [Have you ever encountered circular dependencies in Redux modules? How did you solve it?](#question-30-have-you-ever-encountered-circular-dependencies-in-redux-modules-how-did-you-solve-it)                   |
 
 
 
@@ -105,7 +141,7 @@ yarn dev
 ```
 Your app will be live at http://localhost:3000.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
  
 ## Question 1:  What is Reactjs?
@@ -141,7 +177,7 @@ function Counter() {
 
 export default Counter;
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 2: What is the history behind React evolution?
@@ -166,7 +202,7 @@ export default Counter;
 - ✅ Reusable components
 - ✅ Huge community and ecosystem
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 3: What Are the Major Features of React?
 **Answer:** React offers a variety of modern features that make it one of the most powerful and popular JavaScript libraries for building user interfaces.
@@ -204,7 +240,7 @@ React has a rich ecosystem that includes tools and libraries like:
 - Next.js for server-side rendering
 - esting tools like Jest and React Testing Library
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 4: What is the Difference Between Element and Component in React?
 **Answer:** Understanding the difference between **Element** and **Component** is essential for grasping how React applications are built and rendered.
@@ -231,7 +267,7 @@ function Welcome() {
   return <h1>Hello from Component</h1>;
 }
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 5: How to Create Components in React?
 **Answer:** In React, components are the building blocks of your UI. There are two main ways to create components:
@@ -271,7 +307,7 @@ class Greeting extends Component {
 #### 🔸 Which One Should You Use?
 React recommends using functional components with Hooks, as they are simpler and offer more flexibility.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 6: What is Hooks and Important Hooks Explained	?
@@ -406,7 +442,7 @@ function InputFocus() {
 }
 
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 7: Why can't we use `async` directly in `useEffect`?
@@ -422,7 +458,7 @@ useEffect(() => {
   fetchData();
 }, []);
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 8: What is a Higher-Order Component (HOC)?
@@ -471,7 +507,7 @@ export default App;
 //output
 Hello from HOC!
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 9: What is State in React?
@@ -502,7 +538,7 @@ function Counter() {
 
 export default Counter;
 ```
- ### [🔝 Back to Top](#table-of-contents)
+ ### [🔝 Back to Top](#core-react)
 
 
 ## Question 10: What is Props in React?
@@ -535,7 +571,7 @@ function App() {
 Hello, Ritik!
 Hello, John!
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 11: What is the Difference Between State and Props?
 **Answer:** In React, both **state** and **props** are used to manage data in components, but they serve different purposes.
@@ -569,7 +605,7 @@ function Counter() {
 ```
 📌 Use props to send data to a component and state to manage data inside a component.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 12: What is Prop Drilling in React?
@@ -603,7 +639,7 @@ function GrandChild({ user }) {
   return <p>Hello, {user}</p>;
 }
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 13: What is Context API in React?
@@ -658,7 +694,7 @@ function Dashboard() {
 - Removes the need to pass props down multiple levels.
 - Improves component reusability and decouples data access.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 14: What are the Lifecycle Methods of React Components?
@@ -720,7 +756,7 @@ React Hooks provide similar lifecycle capabilities in functional components:
 
 ---
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 15: What are the Types of Components in React?
@@ -832,7 +868,7 @@ function UncontrolledForm() {
 - Uses ref to get values.
 - Less React code, but harder to manage validations or dynamic changes.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 
 ## Question 16:  What is the difference between HTML and React event handling?
@@ -857,7 +893,7 @@ function UncontrolledForm() {
 ✅ **Conclusion**  
 React provides a more structured and consistent way to handle events across all browsers using its SyntheticEvent system, while HTML relies on native DOM methods and event handling practices.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 17: What Are Synthetic Events?
 **Answer:** Synthetic Events are React’s cross-browser wrapper around the native browser events. They are part of React’s event system and provide a consistent interface for all supported browsers.
@@ -886,7 +922,7 @@ function MyButton() {
 }
 ```
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 18: What Are Inline Conditional Expressions?
 
@@ -963,12 +999,12 @@ Compare with Previous VDOM (Diffing)
        ↓
 Update Real DOM with Minimum Changes (Reconciliation)
 ```
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 20: What is the difference between Shadow DOM and Virtual DOM?
 **Answer:** The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The Virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 21: What is React Fiber?
 
@@ -983,7 +1019,7 @@ Update Real DOM with Minimum Changes (Reconciliation)
 
 > 🚀 Think of Fiber as the smart brain behind React’s fast and efficient rendering process.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 22: What is children prop?
 **Answer:** Children is a prop that allows you to pass components as data to other components, just like any other prop you use. Component tree put between component's opening and closing tag will be passed to that component as children prop.
@@ -1029,7 +1065,7 @@ export default function Greeting() {
 
 **Note**: There are several methods available in the legacy React API to work with this prop. These include React.Children.map, React.Children.forEach, React.Children.count, React.Children.only, React.Children.toArray.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 23: How to write comments in React?
 **Answer:** In React, you can write comments both **inside JSX** and **outside JSX (in plain JavaScript)**.
@@ -1061,7 +1097,7 @@ return (
 ```
  ⚠️ JSX does not support HTML-style (<!-- -->) comments.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 24: What is Lifting State Up in React?
 **Answer:** **Lifting State Up** is a common pattern in React where state is moved from child components to their closest common parent. This allows multiple child components to share and coordinate based on the same state.
@@ -1071,7 +1107,7 @@ return (
 - Centralizing state management in a parent.
 - Following React's unidirectional data flow.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
 ## Question 25: What is the DOM?
 **Answer:** **DOM** stands for **Document Object Model**.  
@@ -1124,6 +1160,261 @@ heading.textContent = "Hello DOM!";
 
 The DOM allows developers to create interactive and dynamic websites by providing a way to interact with the structure and content of a web page.
 
-### [🔝 Back to Top](#table-of-contents)
+### [🔝 Back to Top](#core-react)
 
-## Question 1: What is Redux?
+## Question 1: What is Flux?
+**Answer:** Flux is a unidirectional data flow pattern introduced by Facebook. It is commonly used with React to manage complex data flows in large-scale applications.
+
+Flux emphasizes a single-direction flow of data, making applications predictable, debuggable, and easier to maintain.
+
+### Core Principles of Flux:
+Flux consists of the following core components:
+
+### 1. Actions
+- Actions are plain JavaScript objects that represent an intention to change the state.
+- Each action must have a type field and can optionally include a payload.
+```js
+{
+  type: "ADD_TODO",
+  payload: "Learn Flux"
+}
+```
+
+### 2. Dispatcher
+- A central hub that manages all actions and distributes them to the appropriate stores.
+- Ensures that all stores receive actions in a consistent order.
+
+### 3. Stores
+- Stores contain the application's state and business logic
+- They listen to actions sent by the dispatcher and update their state accordingly.
+- After updating, they notify views that the state has changed.
+
+### 4. Views (React Components)
+- Views are UI components (typically built with React).
+- They subscribe to stores and re-render themselves when the data they depend on changes.
+
+### Flux Data Flow Diagram
+```js
+[Action] → [Dispatcher] → [Store] → [View (Component)]
+                                  ↑
+                      (Views may dispatch new actions)
+```
+Flux enforces a unidirectional flow where data moves in a single direction, preventing state-related confusion and making the flow predictable.
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 2: What is Redux?
+**Answer:** Redux is a predictable state management library commonly used with React (and other JavaScript frameworks or libraries). It helps manage the global state of an application in a centralized and organized way.
+
+Redux is based on the concept of a unidirectional data flow, which means that the data in your application always flows in one direction, making it easier to understand, debug, and maintain.
+
+### Core Principles of Redux:
+1. **Single Source of Truth:**
+The entire state of your application is stored in a single JavaScript object called the store.
+
+2. **State is Read-Only:**
+The only way to change the state is by dispatching an action, which describes what happened.
+
+3. **Changes are Made with Pure Functions:**
+To update the state, you write pure functions called reducers. A reducer takes the current state and an action, then returns a new state.
+
+### Redux Data Flow:
+```js
+[View (React Component)]
+        |
+     dispatch
+        ↓
+     [Action]
+        ↓
+   [Reducer Function]
+        ↓
+     [New State]
+        ↓
+     [Redux Store]
+        ↓
+[View (Re-render with updated data)]
+```
+### [🔝 Back to Top](#redux-questions)
+
+## Question 3: Why Use Redux?
+**Answer:** 
+1. **Centralized State Management:**
+Redux stores the entire application state in a single store, making it easier to manage and debug.
+
+2. **Predictable Data Flow:**
+Redux follows a unidirectional data flow, which ensures that the state changes in a predictable manner.
+
+3. **Improved Debugging:**
+With tools like Redux DevTools, developers can track every state change, action, and rollback the app to a previous state.
+
+4. **Separation of Concerns:**
+Redux cleanly separates actions, reducers, and UI components, leading to better code organization and maintainability.
+
+5. **Easy Testing:**
+Since reducers are pure functions, testing becomes straightforward and reliable.
+
+6. **Useful in Large Applications:**
+Redux shines in applications with complex state logic and shared state across many components.
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 4: What is a store in Redux?
+**Answer:** In Redux, the store is a centralized container that holds the entire state of your application.
+
+It is the single source of truth, which means all your application's state data is kept in one place — the store. This makes it easier to manage, debug, and scale your application.
+
+### Key Responsibilities of the Redux Store:
+1. **Holds the application state**
+The store maintains the current state tree of your app.
+
+2. **Allows access to state via getState()**
+You can retrieve the current state of the application using this method.
+
+3. **Allows state to be updated via dispatch(action)**
+Dispatching an action tells Redux to update the state via reducers.
+
+4. **Registers listeners via subscribe(listener)**
+Components can subscribe to the store to get notified of state changes.
+
+5. **Handles updates through reducers**
+When an action is dispatched, the store calls the reducer and updates the state accordingly.
+
+### 💡 Example Code:
+```js
+import { createStore } from 'redux';
+import rootReducer from './reducers';
+
+const store = createStore(rootReducer);
+
+console.log(store.getState()); // Access the current state
+```
+
+## Question 5: What is an action in Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 6: What is a reducer in Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 7: What is the role of dispatch in Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 8: How do you connect a React component with Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 9: What is the use of useSelector and useDispatch in Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 10: What is the difference between local state and Redux store?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 11: What are middleware in Redux? Can you name a few?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 12: What is Redux DevTools and how does it help in debugging?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 13: What are pure functions and why should reducers be pure?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 14: How do you initialize the Redux store in a React app?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 15: Can you explain the Redux data flow cycle?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 16: What are the pros and cons of using Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 17: How does Redux handle asynchronous operations?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 18: What is redux-thunk and how does it work?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 19: What is the difference between redux-thunk and redux-saga?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 20: What are some alternatives to Redux for state management?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 21: How would you optimize performance in a large Redux application?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 22: How do you handle large and deeply nested state in Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 23: What are selectors and why are they useful?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 24: How would you structure a scalable Redux folder architecture?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 25: What are some common anti-patterns in Redux and how do you avoid them?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 26: Can you explain Redux Toolkit and its benefits?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 27: What is createSlice() in Redux Toolkit? How is it different from traditional Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 28: How would you implement undo/redo functionality in Redux?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 29: How do you persist Redux state across sessions?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
+
+## Question 30: Have you ever encountered circular dependencies in Redux modules? How did you solve it?
+**Answer:** 
+
+### [🔝 Back to Top](#redux-questions)
