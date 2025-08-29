@@ -11,97 +11,99 @@
 | 5   | [What is the difference between var, let, and const?](#question-5-what-is-the-difference-between-var-let-and-const)                                                             |
 | 6   | [What is Hoisting in JavaScript? ](#question-6-what-is-hoisting-in-javascript)                                                             |
 | 7   | [What is the difference between function declaration and function expression?](#question-7-what-is-the-difference-between-function-declaration-and-function-expression)                                                             |
-| 8   | [What is the difference between function declaration and function expression?](#question-8-what-are-arrow-functions-in-javascript)                                                             |
-| 9   | [What is the difference between function declaration and function expression?](#question-9-what-is-the-difference-between-null-and-undefined)                                                             |
-| 10   | [What is the difference between function declaration and function expression?](#question-10-what-is-the-difference-between-primitive-and-reference-types)                                                             |
-| 11   | [What is the difference between function declaration and function expression?](#question-11-what-is-the-difference-between-synchronous-and-asynchronous-code)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-12-what-are-callbacks-in-javascript)                                                             |
-| 13   | [What is the difference between function declaration and function expression?](#question-13-what-are-promises-in-javascript)                                                             |
-| 14   | [What is the difference between function declaration and function expression?](#question-14-what-is-asyncawait-in-javascript)                                                             |
-| 15   | [What is the difference between function declaration and function expression?](#question-15-what-is-an-event-loop-in-javascript)                                                             |
-| 16   | [What is the difference between function declaration and function expression?](#question-16-what-are-closures-in-javascript)                                                             |
-| 17   | [What is the difference between function declaration and function expression?](#question-17-what-is-the-difference-between-call-apply-and-bind)                                                             |
-| 18   | [What is the difference between function declaration and function expression?](#question-18-what-are-template-literals-in-javascript)                                                             |
-| 19   | [What is the difference between function declaration and function expression?](#question-19-what-is-destructuring-in-javascript)                                                             |
-| 20   | [What is the difference between function declaration and function expression?](#question-20-what-are-spread-and-rest-operators-in-javascript)                                                             |
-| 21   | [What is the difference between function declaration and function expression?](#question-21-what-is-a-closure)                                                             |
-| 22   | [What is the difference between function declaration and function expression?](#question-22-what-is-the-difference-between-null-and-undefined)                                                             |
-| 23   | [What is the difference between function declaration and function expression?](#question-23-what-are-template-literals)                                                             |
-| 24   | [What is the difference between function declaration and function expression?](#question-24-what-is-the-difference-between-map-foreach-and-filter)                                                             |
-| 25   | [What is the difference between function declaration and function expression?](#question-25-what-is-event-delegation)                                                             |
-| 26   | [What is the difference between function declaration and function expression?](#question-26-what-is-the-difference-between-function-declaration-and-function-expression)                                                             |
-| 27   | [What is the difference between function declaration and function expression?](#question-27-what-are-arrow-functions)                                                             |
-| 28   | [What is the difference between function declaration and function expression?](#question-28-what-is-the-difference-between-call-apply-and-bind)                                                             |
-| 29   | [What is the difference between function declaration and function expression?](#question-29-what-is-this-in-javascript)                                                             |
-| 30   | [What is the difference between function declaration and function expression?](#question-30-what-is-the-difference-between-synchronous-and-asynchronous-javascript)                                                             |
-| 31   | [What is the difference between function declaration and function expression?](#question-31-what-are-promises)                                                             |
-| 32   | [What is the difference between function declaration and function expression?](#question-32-what-is-asyncawait)                                                             |
-| 33   | [What is the difference between function declaration and function expression?](#question-33-what-is-the-difference-between-localstorage-sessionstorage-and-cookies)                                                             |
-| 34   | [What is the difference between function declaration and function expression?](#question-34-what-are-javascript-modules)                                                             |
-| 35   | [What is the difference between function declaration and function expression?](#question-35-what-is-an-iife)                                                             |
-| 36   | [What is the difference between function declaration and function expression?](#question-36-what-are-higher-order-functions)                                                             |
-| 37   | [What is the difference between function declaration and function expression?](#question-37)                                                             |
-| 38   | [What is the difference between function declaration and function expression?](#question-38-what-is-debouncing)                                                             |
-| 39   | [What is the difference between function declaration and function expression?](#question-39-what-is-throttling)                                                             |
-| 40   | [What is the difference between function declaration and function expression?](#question-40-what-is-the-difference-between-deep-copy-and-shallow-copy)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
-| 12   | [What is the difference between function declaration and function expression?](#question-)                                                             |
+| 8   | [What are Arrow functions in javaScript?](#question-8-what-are-arrow-functions-in-javascript)                                                             |
+| 9   | [What is the difference between null and undefined?](#question-9-what-is-the-difference-between-null-and-undefined)                                                             |
+| 10   | [What is the difference between primitive and reference types?](#question-10-what-is-the-difference-between-primitive-and-reference-types)                                                             |
+| 11   | [What is the difference between synchronous and asynchronous code?](#question-11-what-is-the-difference-between-synchronous-and-asynchronous-code)                                                             |
+| 12   | [What are callbacks in javaScript?](#question-12-what-are-callbacks-in-javascript)                                                             |
+| 13   | [What are promises in javaScript?](#question-13-what-are-promises-in-javascript)                                                             |
+| 14   | [What is asyncawait in javaScript?](#question-14-what-is-asyncawait-in-javascript)                                                             |
+| 15   | [What is an event loop in javaScript?](#question-15-what-is-an-event-loop-in-javascript)                                                             |
+| 16   | [What are closures in javaScript?](#question-16-what-are-closures-in-javascript)                                                             |
+| 17   | [What is the difference between call, apply and bind?](#question-17-what-is-the-difference-between-call-apply-and-bind)                                                             |
+| 18   | [What are template literals in javaScript?](#question-18-what-are-template-literals-in-javascript)                                                             |
+| 19   | [What is destructuring in javaScript?](#question-19-what-is-destructuring-in-javascript)                                                             |
+| 20   | [What are spread and rest operatores in javaScript?](#question-20-what-are-spread-and-rest-operators-in-javascript)                                                             |
+| 21   | [What is a closure?](#question-21-what-is-a-closure)                                                             |
+| 22   | [What is the difference between null and undefined?](#question-22-what-is-the-difference-between-null-and-undefined)                                                             |
+| 23   | [What are template literals?](#question-23-what-are-template-literals)                                                             |
+| 24   | [What is the difference between map, forEach and filter? ](#question-24-what-is-the-difference-between-map-foreach-and-filter)                                                             |
+| 25   | [What is event delegation?](#question-25-what-is-event-delegation)                                                             |
+| 26   | [What is the defference between function declaration and function expressions?](#question-26-what-is-the-difference-between-function-declaration-and-function-expression)                                                             |
+| 27   | [What are arrow functions?](#question-27-what-are-arrow-functions)                                                             |
+| 28   | [What is the defference between Call, Apply and Bind?](#question-28-what-is-the-difference-between-call-apply-and-bind)                                                             |
+| 29   | [What is this in javaScript?](#question-29-what-is-this-in-javascript)                                                             |
+| 30   | [What is the difference between asynchronous and asynchronous javaScript?](#question-30-what-is-the-difference-between-synchronous-and-asynchronous-javascript)                                                             |
+| 31   | [What are promises?](#question-31-what-are-promises)                                                             |
+| 32   | [What is asyncawait?](#question-32-what-is-asyncawait)                                                             |
+| 33   | [What is the difference between localStorage, sessionStorage and cookies?](#question-33-what-is-the-difference-between-localstorage-sessionstorage-and-cookies)                                                             |
+| 34   | [What are javaScript modules](#question-34-what-are-javascript-modules)                                                             |
+| 35   | [What is an life?](#question-35-what-is-an-iife)                                                             |
+| 36   | [What are higher orger functions](#question-36-what-are-higher-order-functions)                                                             |
+| 37   | [What is the event loop in javaScript?](#question-37-what-is-the-event-loop-in-javascript)                                                             |
+| 38   | [What is debouncing?](#question-38-what-is-debouncing)                                                             |
+| 39   | [What is throttling?](#question-39-what-is-throttling)                                                             |
+| 40   | [What is the difference between deep copy and shallow copy?](#question-40-what-is-the-difference-between-deep-copy-and-shallow-copy)                                                             |
+| 41   | [What is NaN in javaScript?](#question-41-what-is-nan-in-javascript)                                                             |
+| 42   | [What is typeOf null in javaScript?](#question-42-what-is-typeof-null-in-javascript)                                                             |
+| 43   | [What are generatores?](#question-43-what-are-generators)                                                             |
+| 44   | [What are symbols in javaScript?](#question-44-what-are-symbols-in-javascript)                                                             |
+| 45   | [What is object destructuring?](#question-45-what-is-object-destructuring)                                                             |
+| 46   | [What is the spread operator?](#question-46-what-is-the-spread-operator)                                                             |
+| 47   | [What is the rest operator?](#question-47-what-is-the-rest-operator)                                                             |
+| 48   | [What is memoization?](#question-48-what-is-memoization)                                                             |
+| 49   | [What is currying?](#question-49-what-is-currying)                                                             |
+| 50   | [What are polyfills?](#question-50-what-are-polyfills)                                                             |
+| 51   | [What is a generator functions](#question-51-what-is-a-generator-function)                                                             |
+| 52   | [What is teh difference between for-in and for-of loops?](#question-52-what-is-the-difference-between-forin-and-forof-loops)                                                             |
+| 53   | [What is the difference between object freeze and object seal?](#question-53-what-is-the-difference-between-objectfreeze-and-objectseal)                                                             |
+| 54   | [What is the difference between setTimeOut and setInterval?](#question-54-what-is-the-difference-between-settimeout-and-setinterval)                                                             |
+| 55   | [What is the difference between ==, ===, !=, and !==?](#question-55-what-is-the-difference-between----and-)                                                             |
+| 56   | [what is the difference between documentQuerySelector and documentGetelementById?](#question-56-what-is-the-difference-between-documentqueryselector-and-documentgetelementbyid)                                                             |
+| 57   | [What is the difference between innerHTML and textContent?](#question-57-what-is-the-difference-between-innerhtml-and-textcontent)                                                             |
+| 58   | [What is the difference between == null and === null?](#question-58-what-is-the-difference-between--null-and--null)                                                             |
+| 59   | [What is the difference between Call Stack and Task Queue?](#question-59-what-is-the-difference-between-call-stack-and-task-queue)                                                             |
+| 60   | [What is the difference between null, undefined, and NaN?](#question-60-what-is-the-difference-between-null-undefined-and-nan)                                                             |
+| 61   | [What is the difference between Object.keys, Object.values, and Object.entries?](#question-61-what-is-the-difference-between-objectkeys-objectvalues-and-objectentries)                                                             |
+| 62   | [What is the difference between undefined and undeclared?](#question-62-what-is-the-difference-between-undefined-and-undeclared)                                                             |
+| 63   | [What is Event Bubbling in JavaScript?](#question-63-what-is-event-bubbling-in-javascript)                                                             |
+| 64   | [What is Event Capturing in JavaScript?](#question-64-what-is-event-capturing-in-javascript)                                                             |
+| 65   | [What is the difference between filter and find?](#question-65-what-is-the-difference-between-filter-and-find)                                                             |
+| 66   | [What is the difference between slice and splice?](#question-66-what-is-the-difference-between-slice-and-splice)                                                             |
+| 67   | [What is the difference between default and named exports?](#question-67-what-is-the-difference-between-default-and-named-exports)                                                             |
+| 68   | [What is the difference between process.nextTick() and setImmediate() in Node.js?](#question-68-what-is-the-difference-between-processnexttick-and-setimmediate-in-nodejs)                                                             |
+| 69   | [What is the difference between == and Object.is()?](#question-69-what-is-the-difference-between--and-objectis)                                                             |
+| 70   | [What is the difference between null and 0 in JavaScript?](#question-70-what-is-the-difference-between-null-and-0-in-javascript)                                                             |
+| 71   | [What is the difference between var obj1 = {a:1} and var obj2 = Object.create(null)?](#question-71-what-is-the-difference-between-var-obj1--a1-and-var-obj2--objectcreatenull)                                                             |
+| 72   | [What is the difference between for..in and Object.keys()?](#question-72-what-is-the-difference-between-forin-and-objectkeys)                                                             |
+| 73   | [What is the difference between isNaN() and Number.isNaN()?](#question-73-what-is-the-difference-between-isnan-and-numberisnan)                                                             |
+| 74   | [What is the difference between setTimeout(fn, 0) and Promise.resolve().then(fn)?](#question-74-what-is-the-difference-between-settimeoutfn-0-and-promiseresolvethenfn)                                                             |
+| 75   | [What is the difference between typeof and instanceof?](#question-75-what-is-the-difference-between-typeof-and-instanceof)                                                             |
+| 76   | [What is the difference between hasOwnProperty and in operator?](#question-76-what-is-the-difference-between-hasownproperty-and-in-operator)                                                             |
+| 77   | [What is the difference between Object.freeze() and Object.preventExtensions()?](#question-77-what-is-the-difference-between-objectfreeze-and-objectpreventextensions)                                                             |
+| 78   | [What is the difference between forEach, map, and reduce?](#question-78-what-is-the-difference-between-foreach-map-and-reduce)                                                             |
+| 79   | [What is the difference between call stack and event loop?](#question-79-what-is-the-difference-between-call-stack-and-event-loop)                                                             |
+| 80   | [What is the difference between deep equality and shallow equality?](#question-80-what-is-the-difference-between-deep-equality-and-shallow-equality)                                                             |
+| 81   | [What is the difference between for..of and forEach?](#question-81-what-is-the-difference-between-forof-and-foreach)                                                             |
+| 82   | [What is the difference between Object.create(null) and {}](#question-82-what-is-the-difference-between-objectcreatenull-and-)                                                             |
+| 83   | [What is the difference between JSON.stringify and JSON.parse?](#question-83-what-is-the-difference-between-jsonstringify-and-jsonparse)                                                             |
+| 84   | [What is the difference between null and NaN?](#question-84-what-is-the-difference-between-null-and-nan)                                                             |
+| 85   | [What is the difference between Object.assign() and spread operator {...obj}?](#question-85-what-is-the-difference-between-objectassign-and-spread-operator-obj)                                                             |
+| 86   | [What is the difference between Array.from() and Array.of()?](#question-86-what-is-the-difference-between-arrayfrom-and-arrayof)                                                             |
+| 87   | [What is the difference between window.onload and DOMContentLoaded?](#question-87-what-is-the-difference-between-windowonload-and-domcontentloaded)                                                             |
+| 88   | [What is the difference between flatMap() and map()?](#question-88-what-is-the-difference-between-flatmap-and-map)                                                             |
+| 89   | [What is the difference between WeakMap and Map in JavaScript?](#question-89-what-is-the-difference-between-weakmap-and-map-in-javascript)                                                             |
+| 90   | [What is the difference between WeakSet and Set?](#question-90-what-is-the-difference-between-weakset-and-set)                                                             |
+| 91   | [What is the difference between structuredClone() and JSON.parse(JSON.stringify())?](#question-91-what-is-the-difference-between-structuredclone-and-jsonparsejsonstringify)                                                             |
+| 92   | [What is the difference between Event Delegation and Direct Event Handling?](#question-92-what-is-the-difference-between-event-delegation-and-direct-event-handling)                                                             |
+| 93   | [What is the difference between Promise.all and Promise.race?](#question-93-what-is-the-difference-between-promiseall-and-promiserace)                                                             |
+| 94   | [What is the difference between setTimeout with 0ms delay and Promise.then()?](#question-94-what-is-the-difference-between-settimeout-with-0ms-delay-and-promisethen)                                                             |
+| 95   | [What is the difference between flat() and flatMap()?](#question-95-what-is-the-difference-between-flat-and-flatmap)                                                             |
+| 96   | [What is the difference between Symbol() and String() as object keys?](#question-96-what-is-the-difference-between-symbol-and-string-as-object-keys)                                                             |
+| 97   | [What is the difference between Object.seal() and Object.freeze()?](#question-97-what-is-the-difference-between-objectseal-and-objectfreeze)                                                             |
+| 98   | [What are Proxies in JavaScript and their use cases?](#question-98-what-are-proxies-in-javascript-and-their-use-cases)                                                             |
+| 99   | [What is the difference between Microtask and Macrotask?](#question-99-what-is-the-difference-between-microtask-and-macrotask)                                                             |
+| 100   | [How to optimize performance in large JavaScript applications?](#question-100-how-to-optimize-performance-in-large-javascript-applications)                                                             |
 
              
 ## Question 1:  What is JavaScript?
@@ -2893,6 +2895,94 @@ Object.freeze(obj2);
 
 ### [🔝 Back to Top](#core-javascript)
 
+## Question 98: What are Proxies in JavaScript and their use cases?
+
+**Answer:**  
+A **Proxy** allows you to intercept and customize operations performed on objects, such as property access, assignment, deletion, and function calls.
+
+**Use Cases:**  
+- Validation of property values.  
+- Logging or debugging property access.  
+- Reactive programming (e.g., frameworks like Vue.js).  
+- Security or access control.  
+
+---
+
+### 💡 Example Code:
+```js
+const obj = { name: "Ritik" };
+
+const proxy = new Proxy(obj, {
+  get(target, key) {
+    console.log(`Getting ${key}`);
+    return target[key];
+  },
+  set(target, key, value) {
+    console.log(`Setting ${key} to ${value}`);
+    target[key] = value;
+    return true;
+  }
+});
+
+console.log(proxy.name); // Logs: "Getting name", then "Ritik"
+proxy.name = "Patidar";  // Logs: "Setting name to Patidar"
+```
+
+### [🔝 Back to Top](#core-javascript)
+
+## Question 99: What is the difference between Microtask and Macrotask?
+
+**Answer:**  
+- **Microtask:**  
+  - Examples: `Promise` callbacks, `process.nextTick()` (Node.js).  
+  - Executed **before** the next event loop tick, immediately after the current execution stack.  
+
+- **Macrotask:**  
+  - Examples: `setTimeout`, `setInterval`, I/O events.  
+  - Executed **after** all microtasks have finished, in the next event loop tick.  
+
+---
+
+### 💡 Example Code:
+```js
+setTimeout(() => console.log("macrotask"), 0);
+Promise.resolve().then(() => console.log("microtask"));
+
+console.log("sync");
+// Output:
+// sync
+// microtask
+// macrotask
+```
+
+### [🔝 Back to Top](#core-javascript)
+
+## Question 100: How to optimize performance in large JavaScript applications?
+
+**Answer:**  
+- Use **debouncing/throttling** for frequent events (scroll, resize, input).  
+- **Lazy load modules** using dynamic `import()` to reduce initial load.  
+- **Memoize expensive computations** to avoid recalculation.  
+- **Avoid memory leaks** by removing event listeners and nullifying unused references.  
+- Use **Web Workers** for heavy computations to keep the UI responsive.  
+- Use **`requestAnimationFrame`** for smooth animations instead of `setTimeout` or `setInterval`.  
+
+---
+
+### 💡 Example Code (Debouncing):
+```js
+function debounce(fn, delay){
+  let timer;
+  return function(...args){
+    clearTimeout(timer);
+    timer = setTimeout(()=> fn.apply(this, args), delay);
+  };
+}
+
+// Usage
+window.addEventListener("resize", debounce(() => {
+  console.log("Resized!");
+}, 300));
 
 
 ### [🔝 Back to Top](#core-javascript)
