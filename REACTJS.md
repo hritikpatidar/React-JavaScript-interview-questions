@@ -35,6 +35,11 @@
 | 23  | [How to write comments in React?](#question-23-how-to-write-comments-in-react)                   |
 | 24  | [What is Lifting State Up in React?](#question-24-what-is-lifting-state-up-in-react)                   |
 | 25  | [What is the DOM?](#question-25-what-is-the-dom)                   |
+| 26  | [How does React work?](#question-26-how-does-react-work)                   |
+| 27  | [What is the use of refs ?](#question-27-what-is-the-use-of-refs)                   |
+| 28  | [What are the differences between a Class component and Functional component?](#question-28-what-are-the-differences-between-a-class-component-and-functional-component)                   |
+| 29  | [What are Fragments in React?](#question-29-what-are-fragments-in-react)                   |
+| 30  | [What is the difference between Component and Container in Redux?](#question-30-what-is-the-difference-between-component-and-container-in-redux)                   |
 
 ## Redux Questions
 
@@ -1160,6 +1165,94 @@ heading.textContent = "Hello DOM!";
 ### 📌 Summary 
 
 The DOM allows developers to create interactive and dynamic websites by providing a way to interact with the structure and content of a web page.
+
+### [🔝 Back to Top](#core-react)
+
+## Question 26: How does React work?
+**Answer:** React creates a virtual DOM. When state changes in a component it firstly runs a "diffing" algorithm, which
+identifies what has changed in the virtual DOM. The second
+step is reconciliation, where it updates the DOM with the
+results of diff.
+
+### [🔝 Back to Top](#core-react)
+
+
+## Question 27: What is the use of refs?
+**Answer:** Refs provide a way to access DOM nodes or React elements created in the render method. They should be avoided in most cases, however, they can be useful when we need direct
+access to DOM element or an instance of a component.
+### There are a few good use cases for refs:
+- Managing focus, text selection, or media playback
+- Triggering imperative animations.
+- Integrating with third-party DOM libraries.
+
+Refs are created using React.createRef() and attached to
+React elements via the ref attribute. Refs are commonly
+assigned to an instance property when a component is
+constructed so they can be referenced throughout the
+component.
+### [🔝 Back to Top](#core-react)
+
+## Question 28: What are the differences between a Class component and Functional component?
+**Answer:**
+#### Class Components:
+- Class-based Components uses ES6 class syntax. It can
+make use of the lifecycle methods.
+- Class components extend from React.Component.
+- In here you have to use this keyword to access the props
+and functions that you declare inside the class
+components.
+#### Functional Components:
+- Functional Components are simpler comparing to class-
+based functions
+- Functional Components mainly focuses on the UI of the
+application, not on the behavior.
+- To be more precise these are basically render function in
+the class component.
+- Functional Components can have state and mimic
+lifecycle events using Reach Hooks
+
+### [🔝 Back to Top](#core-react)
+
+## Question 29: What are Fragments in React?
+**Answer:** It's common pattern in React which is used for a component
+to return multiple elements. Fragments let you group a list of
+children without adding extra nodes to the DOM.
+```js
+render(){
+ return (
+  <React.fragment>
+    <ChileA />
+    <ChileB />
+    <ChileC />
+  </React.fragment>
+ )
+}
+```
+There is also a shorter syntax:
+```js
+render(){
+ return (
+  <>
+    <ChileA />
+    <ChileB />
+    <ChileC />
+  </>
+ )
+}
+```
+
+### [🔝 Back to Top](#core-react)
+
+## Question 30: What is the difference between Component and Container in Redux?
+**Answer:** 
+- Component is part of the React API. A Component is a
+class or function that describes part of a React UI.
+- Container is an informal term for a React component that
+is connected to a redux store. Containers receive Redux
+state updates and dispatch actions, and they usually don't
+render DOM elements; they delegate rendering to
+presentational child components.
+
 
 ### [🔝 Back to Top](#core-react)
 
