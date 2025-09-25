@@ -1,13 +1,13 @@
 
 //reverse a string without using inbuilt function
-const name = "Ritik_patidar";
+let name = "Ritik_patidar";
 let reverse = "";
 for (let i = name.length - 1; i >= 0; i--) {
     reverse += name[i]
 }
 console.log("reverse-----------", reverse);
 
-//reverese a word 
+//reverese a word latter
 let str = "i am reactJs developer";
 let str1 = str.split(" ");
 let final = "";
@@ -18,6 +18,17 @@ for (let i = 0; i < str1.length; i++) {
     final += " "
 }
 console.log("final-------------", final);
+
+//reverse a string
+
+let string = "this is javaScript code";
+let splitStr = string.split(" ")
+let value = ""
+for (let i = splitStr.length - 1; i >= 0; i--) {
+    value += splitStr[i] + " "
+}
+
+console.log("reverse string--------------------", value)
 
 //check if a number is prime or not
 function isPrime(num) {
@@ -59,3 +70,109 @@ for (let i = 0; i < arr.length; i++) {
 console.log("smallestValue-------------", smallestValue);
 
 // find the second largest number in an array
+
+
+//sum of digits of a number with function 
+function sum(n) {
+    const number = n.toString().split('');
+    let res = 0;
+    for (let i = 0; i <= number.length; i++) {
+        res += parseInt(number[i]) || 0;
+    }
+    return res
+}
+// Example
+console.log("sum of digits of a number with function-------------", sum(7374623));
+
+//sum of digits of a number without function 
+let num = 7374623;
+let sumDigit = 0;
+while (num > 0) {
+    sumDigit += num % 10;
+    num = Math.floor(num / 10);
+}
+// Example
+console.log("sum of digits of a number without function -------------", sumDigit);
+
+//sum of digits and reverse of a number
+function numberToArray(num) {
+    let sum = 0;
+    let reverse = 0;
+    while (num > 0) {
+        sum += num % 10;
+        reverse = (reverse * 10) + (num % 10)
+        num = Math.floor(num / 10);
+    }
+    return { sum, reverse };
+}
+
+// Example
+console.log("sum of digits and reverse of a number---------------------------", numberToArray(7374623));
+
+//Palindrome Check (string/number)
+function isPalindrome(str) {
+    str = str.toString();
+    return str === str.split("").reverse().join("");
+}
+
+// Example
+console.log("isPalindrome string (madam) ---------------", isPalindrome("madam")); // true
+console.log("isPalindrome number (121)---------------", isPalindrome(121));     // true
+
+//Reverse a String
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+
+// Example
+console.log("Reverse a String (hello)-----------------", reverseString("hello")); // "olleh"
+
+//Fibonacci Series (till n terms)
+function fibonacci(n) {
+    let a = 0, b = 1, result = [a, b];
+    for (let i = 2; i < n; i++) {
+        [a, b] = [b, a + b];
+        result.push(b);
+    }
+    return result;
+}
+
+// Example
+console.log("Fibonacci Series ----------------", fibonacci(7)); // [0,1,1,2,3,5,8]
+
+
+//Factorial of a Number
+
+function factorial(n) {
+    let res = 1;
+    for (let i = 2; i <= n; i++) res *= i;
+    return res;
+}
+
+// Example
+console.log("Factorial of a Number(5)---------------", factorial(5)); // 120
+
+
+//remove duplicate and add count 
+
+let data = [{ activityName: "Hiking" }, { activityName: "Hiking" }, { activityName: "Running" }, { activityName: "Sleep" }, { activityName: "Cycling" }, { activityName: "Running" }, { activityName: "Running" }, { activityName: "Hiking" }]
+
+var result = {}
+for (let i = 0; i < data.length; i++) {
+    let name = data[i]?.activityName
+    if (result[name]) {
+        result[name] += 1
+    } else {
+        result[name] = 1
+    }
+}
+
+console.log("result", result)
+
+const arrayFormat = [];
+
+for (let key in result) {
+    arrayFormat.push({ "activityName": key, "count": result[key] })
+}
+
+console.log("arrayFormat", arrayFormat)
