@@ -244,7 +244,7 @@ React has a rich ecosystem that includes tools and libraries like:
 - React Router for routing
 - Redux for state management
 - Next.js for server-side rendering
-- esting tools like Jest and React Testing Library
+- Testing tools like Jest and React Testing Library
 
 ### [🔝 Back to Top](#core-react)
 
