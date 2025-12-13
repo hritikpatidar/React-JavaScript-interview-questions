@@ -4,7 +4,7 @@
 
 | No. | Question                                 |
 |-----|------------------------------------------|
-| 1   | [What is JavaScript?](#question-1--what-is-javascript)                                                                        |
+| 1   | [What is JavaScript?](#question-1-what-is-javascript)                                                                        |
 | 2   | [What are JavaScript Data Types?](#question-2-what-are-javascript-data-types)                                                                        |
 | 3   | [Difference between == and === in JavaScript?](#question-3-difference-between--and--in-javascript)                                                                        |
 | 4   | [What are Truthy and Falsy values?](#question-4-what-are-truthy-and-falsy-values)                                                                        |
