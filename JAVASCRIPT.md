@@ -210,7 +210,7 @@ var a = 40; // ✅ Works
 ## Question 6: What is Hoisting in JavaScript?  
 
 **Answer:**  
-Hoisting is JavaScript’s behavior of moving variable and function declarations to the top of their scope before execution.  
+Hoisting is JavaScript’s default behavior of moving declarations to the top of their scope before code execution.
 
 ### Key Points:
 - Only declarations are hoisted, not initializations.  
