@@ -131,7 +131,7 @@ console.log("Hello, JavaScript!");
 ### [🔝 Back to Top](#core-javascript)
 
 ## Question 2: What are JavaScript Data Types?
-**Answer:** JavaScript provides different types of values which are categorized as Primitive and Reference types.
+**Answer:** JavaScript mainly has primitive and non-primitive data types.
 
 ###  Key Points:
 - Primitive Types: String, Number, Boolean, Null, Undefined, Symbol, BigInt.
