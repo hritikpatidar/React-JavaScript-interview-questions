@@ -153,8 +153,8 @@ let user = { name: "Ritik", age: 25 }; // Object
 ## Question 3: Difference between == and === in JavaScript?  
 
 **Answer:**  
-`==` is the loose equality operator that performs type conversion before comparison.  
-`===` is the strict equality operator that checks both value and type without conversion.  
+`==` checks only the value and converts the type if needed before comparing. 
+`===` checks both value and type, and does not do any type conversion.
 
 ### Key Points:
 - Prefer using `===` for accurate and predictable comparisons.  
