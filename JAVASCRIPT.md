@@ -190,9 +190,9 @@ if ("Hello") console.log("Truthy"); // Truthy
 These are keywords used to declare variables with different scopes and behaviors.  
 
 ### Key Points:
-- **var:** Function-scoped, hoisted, can be re-declared.  
-- **let:** Block-scoped, not hoisted the same way, cannot be re-declared.  
-- **const:** Block-scoped, must be initialized, cannot be reassigned.  
+- **var:** var is a function-scoped variable declaration in JavaScript that allows re-declaration and re-assignment..  
+- **let:** let is a block-scoped variable that allows re-assignment but does not allow re-declaration in the same scope..  
+- **const:** const is a block-scoped variable used to declare constants whose value cannot be re-assigned after initialization.  
 
 ### 💡 Example Code:
 ```js
