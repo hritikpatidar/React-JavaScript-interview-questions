@@ -107,12 +107,13 @@
 
              
 ## Question 1:  What is JavaScript?
-**Answer:** **JavaScript (JS)** is a **high-level, dynamic, interpreted programming language** that enables you to add interactivity, logic, and dynamic behavior to web pages.
+**Answer:** JavaScript is a high-level, interpreted, dynamically typed programming language mainly used to create interactive and dynamic web applications. It runs on the client-side in browsers and also on the server-side using Node.js.
 
 ###  Key Points:
-- JavaScript is single-threaded and asynchronous (via event loop).
-- Runs in the browser as well as on the server (via Node.js).
-- Supports both object-oriented and functional programming.
+- JavaScript is single-threaded but handles async operations using the event loop..
+- It follows non-blocking, asynchronous behavior (callbacks, promises, async/await).
+- Runs in browser as well as server (Node.js).
+- Supports object-oriented, functional, and event-driven programming.
 - It is loosely typed (dynamic typing).
 
 ### Core Features of React:
