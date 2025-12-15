@@ -24,23 +24,23 @@
 | 18   | [What are template literals in javaScript?](#question-18-what-are-template-literals-in-javascript)                                                             |
 | 19   | [What is destructuring in javaScript?](#question-19-what-is-destructuring-in-javascript)                                                             |
 | 20   | [What are spread and rest operatores in javaScript?](#question-20-what-are-spread-and-rest-operators-in-javascript)                                                             |
-| 21   | [What is a closure?](#question-21-what-is-a-closure)                                                             |
+| 21   | [](#question-21-what-is-a-closure)                                                             |
 | 22   | [What is the difference between null and undefined?](#question-22-what-is-the-difference-between-null-and-undefined)                                                             |
-| 23   | [What are template literals?](#question-23-what-are-template-literals)                                                             |
+| 23   | [](#question-23-what-are-template-literals)                                                             |
 | 24   | [What is the difference between map, forEach and filter? ](#question-24-what-is-the-difference-between-map-foreach-and-filter)                                                             |
 | 25   | [What is event delegation?](#question-25-what-is-event-delegation)                                                             |
 | 26   | [What is the defference between function declaration and function expressions?](#question-26-what-is-the-difference-between-function-declaration-and-function-expression)                                                             |
-| 27   | [What are arrow functions?](#question-27-what-are-arrow-functions)                                                             |
-| 28   | [What is the defference between Call, Apply and Bind?](#question-28-what-is-the-difference-between-call-apply-and-bind)                                                             |
+| 27   | [](#question-27-what-are-arrow-functions)                                                             |
+| 28   | [](#question-28-what-is-the-difference-between-call-apply-and-bind)                                                             |
 | 29   | [What is this in javaScript?](#question-29-what-is-this-in-javascript)                                                             |
-| 30   | [What is the difference between asynchronous and asynchronous javaScript?](#question-30-what-is-the-difference-between-synchronous-and-asynchronous-javascript)                                                             |
-| 31   | [What are promises?](#question-31-what-are-promises)                                                             |
-| 32   | [What is asyncawait?](#question-32-what-is-asyncawait)                                                             |
+| 30   | [](#question-30-what-is-the-difference-between-synchronous-and-asynchronous-javascript)                                                             |
+| 31   | [](#question-31-what-are-promises)                                                             |
+| 32   | [](#question-32-what-is-asyncawait)                                                             |
 | 33   | [What is the difference between localStorage, sessionStorage and cookies?](#question-33-what-is-the-difference-between-localstorage-sessionstorage-and-cookies)                                                             |
 | 34   | [What are javaScript modules](#question-34-what-are-javascript-modules)                                                             |
 | 35   | [What is an life?](#question-35-what-is-an-iife)                                                             |
 | 36   | [What are higher orger functions](#question-36-what-are-higher-order-functions)                                                             |
-| 37   | [What is the event loop in javaScript?](#question-37-what-is-the-event-loop-in-javascript)                                                             |
+| 37   | [](#question-37-what-is-the-event-loop-in-javascript)                                                             |
 | 38   | [What is debouncing?](#question-38-what-is-debouncing)                                                             |
 | 39   | [What is throttling?](#question-39-what-is-throttling)                                                             |
 | 40   | [What is the difference between deep copy and shallow copy?](#question-40-what-is-the-difference-between-deep-copy-and-shallow-copy)                                                             |
@@ -232,8 +232,8 @@ let y = 10;
 ## Question 7: What is the difference between function declaration and function expression?  
 
 **Answer:**  
-- **Function Declaration:** Hoisted to the top.  
-- **Function Expression:** Not hoisted, defined at runtime.  
+- **Function Declaration:** A function declaration is a function that is defined using the function keyword and is hoisted completely, meaning it can be called before it is defined in the code.
+- **Function Expression:** A function expression is a function that is assigned to a variable. It is created at runtime and is not hoisted like a function declaration.
 
 ### Key Points:
 - Declarations can be called before definition.  
@@ -246,7 +246,7 @@ sayHello(); // ✅ Works
 function sayHello() { console.log("Hello"); }
 
 // Function Expression
-// greet(); // ❌ Error
+greet(); // ❌ Error
 const greet = function() { console.log("Hi"); };
 ```
 
@@ -273,8 +273,10 @@ console.log(add(5, 3)); // 8
 ## Question 9: What is the difference between null and undefined?  
 
 **Answer:**  
-- `null` → Intentional absence of value.  
-- `undefined` → Variable declared but not assigned.  
+- `null` → null is an intentional assignment that represents an empty or unknown value.
+It is explicitly set by the developer.
+- `undefined` → undefined means a variable has been declared but no value has been assigned to it yet.
+JavaScript automatically assigns undefined.  
 
 ### Key Points:
 - `typeof null` → `"object"` (JS bug).  
@@ -359,7 +361,7 @@ greet("Ritik", () => console.log("Welcome!"));
 ## Question 13: What are Promises in JavaScript?  
 
 **Answer:**  
-Promises represent the eventual completion or failure of an asynchronous operation.  
+A Promise in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value.
 
 ### Key Points:
 - States: `pending`, `fulfilled`, `rejected`.  
@@ -433,6 +435,9 @@ console.log("End");
 **Answer:**  
 A **closure** is a function that retains access to variables from its **outer scope** even after the outer function has executed.  
 
+**Hindi translate:**     
+closure ek function hota he jisme inner function apne outer function ki value ko yad rkhta he chahe outer function exicute ho chuka ho.
+
 ### Key Points:
 - Used for **data privacy** and **stateful functions**.  
 - The **inner function remembers** variables from the outer scope.  
@@ -462,9 +467,10 @@ console.log(counter()); // 2
 All three are used to explicitly set the `this` context of a function.
 
 ### Key Points:
-- **`call`** → Invokes function **immediately**, arguments passed **individually (comma-separated)**.  
-- **`apply`** → Invokes function **immediately**, arguments passed as a **single array**.  
-- **`bind`** → Does **not call immediately**, returns a **new function** with `this` bound.
+- **`call`** → **call()** is a method that invokes a function immediately and allows you to explicitly set the value of this, with arguments passed individually (comma-separated).
+- **`apply`** → **apply()** is similar to call(), but it invokes the function immediately and accepts arguments as a single array.
+- **`bind`** → **bind()** does not invoke the function immediately.
+It returns a new function with a fixed this value and optional preset arguments.
 
 ### 💡 Example Code:
 ```js
@@ -588,38 +594,10 @@ console.log(rest);  // [20, 30, 40]
 
 ### [🔝 Back to Top](#core-javascript)
 
-## Question 21: What is a Closure?
+## Question 21: 
 
 **Answer:**  
-A **closure** is created when an inner function "remembers" the variables from its outer (lexical) scope, even after the outer function has executed.  
 
----
-
-### Key Points:
-- Functions in JavaScript form closures automatically.  
-- Useful for **data privacy**, **encapsulation**, and creating **stateful functions**.  
-- Inner function always has access to:  
-  1. Its own variables.  
-  2. Outer function variables.  
-  3. Global variables.  
-
----
-
-### 💡 Example Code:
-```js
-function outer() {
-  let count = 0;
-  return function inner() {
-    count++;
-    return count;
-  };
-}
-
-const counter = outer();
-console.log(counter()); // 1
-console.log(counter()); // 2
-console.log(counter()); // 3
-```
 
 ### [🔝 Back to Top](#core-javascript)
 
