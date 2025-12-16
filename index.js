@@ -182,7 +182,7 @@ for (let i = 0; i < data.length; i++) {
     }
 }
 
-console.log("result", result)
+console.log("result-------------------------", result)
 
 const arrayFormat = [];
 
@@ -190,7 +190,7 @@ for (let key in result) {
     arrayFormat.push({ "activityName": key, "count": result[key] })
 }
 
-console.log("arrayFormat", arrayFormat)
+console.log("arrayFormat------------------", arrayFormat)
 
 //find duplicate value in array 
 let arr1 = [55, 22, 43, 34, 22, 16, 27, 88, 88, 1, 22, 34, 96, 57, 12]
@@ -203,7 +203,7 @@ for (let i = 0; i < arr1.length; i++) {
     }
 }
 
-console.log("duplicate value", duplicate)
+console.log("duplicate value----------------------", duplicate)
 
 
 
@@ -223,3 +223,72 @@ for (let i = 0; i < str2.length; i++) {
         break;
     }
 }
+console.log("count-------------------", count)
+
+//Flatten an array
+
+let arr3 = [1, [2, [3, 4]], 5, [6, [7, 8, [9, 10]]]];
+let result = []
+
+const solveFunction = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        if (Array.isArray(array[i])) {
+            solveFunction(array[i])
+        } else {
+            result.push(array[i])
+        }
+    }
+
+}
+
+solveFunction(arr3)
+console.log("result-----------------", result)
+
+
+//check anagram 
+
+let a = "listeni";
+let b = "silenti";
+
+const isAnagram = (str1, str2) => {
+    if (str1.length !== str2.length) return false
+
+    //return str1.split("").sort().join() === str2.split.sort().join()
+
+    let count = {}
+
+    for (let char of str1) {
+        count[char] = (count[char] || 0) + 1
+    }
+    //{"l":1,"i":2,"s":1,"t":1,"e":1,"n":1}
+
+    for (let char of str2) {
+        if (!count[char]) return false
+
+        count[char]-- //{"l":1,"i":1,"s":1,"t":1,"e":1,"n":1}
+    }
+    return true
+}
+
+const result = isAnagram(a, b)
+
+console.log("result--------------------------", result)
+
+
+// find missing number 
+
+let arr4 = [1, 2, 3, 5]
+
+let arrLargeValue = 5
+let arrSum = 0
+let arrSum2 = 0
+for (let i = 1; i <= arrLargeValue; i++) {
+    arrSum += i
+}
+
+for (let i = 0; i < arr4.length; i++) {
+    arrSum2 += arr4[i]
+}
+
+const result = arrSum - arrSum2
+console.log(result)
