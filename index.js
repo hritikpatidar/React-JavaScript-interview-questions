@@ -70,7 +70,22 @@ for (let i = 0; i < arr.length; i++) {
 console.log("smallestValue-------------", smallestValue);
 
 // find the second largest number in an array
+let arr2 = [55, 22, 43, 16, 27, 88, 1, 22, 34, 96, 57, 12];
 
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for (let i = 0; i < arr2.length; i++) {
+    if (arr2[i] > largest) {
+        secondLargest = largest;
+        largest = arr2[i];
+    } else if (arr2[i] > secondLargest && arr2[i] !== largest) {
+        secondLargest = arr2[i];
+    }
+}
+
+console.log("largest:", largest);
+console.log("second largest:", secondLargest);
 
 //sum of digits of a number with function 
 function sum(n) {
@@ -176,3 +191,35 @@ for (let key in result) {
 }
 
 console.log("arrayFormat", arrayFormat)
+
+//find duplicate value in array 
+let arr1 = [55, 22, 43, 34, 22, 16, 27, 88, 88, 1, 22, 34, 96, 57, 12]
+
+let duplicate = []
+
+for (let i = 0; i < arr1.length; i++) {
+    for (let j = i + 1; j < arr1.length; j++) {
+        if (arr1[i] === arr1[j] && !duplicate.includes(arr1[i])) duplicate.push(arr1[i])
+    }
+}
+
+console.log("duplicate value", duplicate)
+
+
+
+//find first non repet Character|
+let str2 = "aabbccdfe";
+let count = {};
+
+// step 1: frequency
+for (let i = 0; i < str2.length; i++) {
+    count[str2[i]] = (count[str2[i]] || 0) + 1;
+}
+
+// step 2: first non-repeating
+for (let i = 0; i < str2.length; i++) {
+    if (count[str2[i]] === 1) {
+        console.log("First non-repeating:", str2[i]);
+        break;
+    }
+}

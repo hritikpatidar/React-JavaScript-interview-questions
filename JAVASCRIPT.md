@@ -24,7 +24,7 @@
 | 18   | [What are template literals in javaScript?](#question-18-what-are-template-literals-in-javascript)                                                             |
 | 19   | [What is destructuring in javaScript?](#question-19-what-is-destructuring-in-javascript)                                                             |
 | 20   | [What are spread and rest operatores in javaScript?](#question-20-what-are-spread-and-rest-operators-in-javascript)                                                             |
-| 21   | [](#question-21-what-is-a-closure)                                                             |
+| 21   | [What is structuredClone()?](#question-21-what-is-structuredclone)                                                             |
 | 22   | [What is the difference between null and undefined?](#question-22-what-is-the-difference-between-null-and-undefined)                                                             |
 | 23   | [](#question-23-what-are-template-literals)                                                             |
 | 24   | [What is the difference between map, forEach and filter? ](#question-24-what-is-the-difference-between-map-foreach-and-filter)                                                             |
@@ -594,9 +594,16 @@ console.log(rest);  // [20, 30, 40]
 
 ### [🔝 Back to Top](#core-javascript)
 
-## Question 21: 
+## Question 21: What is structuredClone()?
 
-**Answer:**  
+**Answer:**  structuredClone() JavaScript ka built-in method hai jo kisi bhi object ka true deep copy banata hai.
+Isme nested objects, arrays, dates, maps, sets sab safely copy ho jaate hain aur koi reference share nahi hota.
+
+- 2021 → Modern browsers me introduce hua
+- 2022 → Widely stable & recommended
+- Node.js:
+  - Node 17+ → supported
+  - Node 18+ → fully stable (production ready)
 
 
 ### [🔝 Back to Top](#core-javascript)
@@ -1187,8 +1194,9 @@ window.addEventListener("scroll", throttle(handleScroll, 1000));
 ## Question 40: What is the difference between Deep Copy and Shallow Copy?
 
 **Answer:**  
-- **Shallow Copy:** Copies only the **first level** of an object. Nested objects are still referenced.  
-- **Deep Copy:** Copies **all levels**, creating a completely independent clone of the object.
+- **Shallow Copy:** **Shallow copy** me naya object banta hai,
+lekin nested objects ka reference same rehta hai.
+- **Deep Copy:** **Deep copy** me object ke sabhi levels ka completely naya copy banta hai aur koi bhi reference shared nahi hota.
 
 ---
 
@@ -1196,7 +1204,9 @@ window.addEventListener("scroll", throttle(handleScroll, 1000));
 - Shallow copy uses `Object.assign()` or spread operator `{ ...obj }`.  
 - Deep copy can use `JSON.parse(JSON.stringify(obj))` or libraries like Lodash (`_.cloneDeep`).  
 - Modifying nested objects in shallow copy affects the original object.  
+- Shallow copy → nested reference same
 
+- Deep copy → har level pe new reference
 ---
 
 ### 💡 Example Code:
