@@ -1,0 +1,81 @@
+**Namaste javaScript**
+**What is JavaScript? How javaScript works and is the javaScript is signle threaded and multi threaded and what is exicution context?
+- So JavaScript is a synchronous signle-threaded language.
+- This whole thing which you can se in the exicution context.the first component also know as the memory component.
+  The second component is known as the code component. memory component contains variable and functions as the key and value pairs.
+  and the code component is the place where the whole js code is exicuted. memory component
+  is also known as the variable enviroment and the code component is also known as the thread of exicution.
+- So this thread of exicution is like a thread in which the whole code is exicution one line at a time.
+
+        +------------------+------------------+
+        |       MEMORY     |     Code         |
+        +------------------+------------------|
+        | key :value       |                  |         
+        | a : 10           |                  |
+        | fn : { ... }     |                  |
+        +------------------+------------------+
+                |                   |
+                |                   |
+               \/                   \/
+        variable enviroment      thread of exicution
+            
+
+
+**code exicution in javaScript 
+    console.log("hello")
+    console.log("x", x)
+    var x = 10;
+
+    function getName() {
+        var b = 5;
+        console.log("hii my name is ritik")
+    }
+
+    function getRitilk() {
+        console.log("hii ritik ")
+    }
+    getName()
+    console.log(getName)
+    console.log("x1", x)
+Answer:- JavaScript me execution do phases me hota hai: memory creation (hoisting) aur code execution. 
+        var undefined hota hai aur functions fully hoist ho jaate hain
+    -Phase 1: Memory Creation (Hoisting)
+        -JavaScript sabse pehle memory allocate karta hai:
+        x        → undefined
+        getName  → function reference
+        getRitilk→ function reference
+
+        console:-
+        var → undefined
+        function → fully hoisted
+
+    Phase 2: Code Execution (Line by Line)
+        js:- console.log("hello")
+        output:- hello
+        js:- console.log("x", x) //x abhi assign nahi hua → undefined
+        output:- x undefined
+        js:- var x = 10; //Ab x = 10
+        js:-function getName() {
+                var b = 5;
+                console.log("hii my name is ritik")
+            } 
+            function getRitilk() {
+                console.log("hii ritik ")
+            }
+            Same (hoisted)
+            Already memory me tha (no change)
+        js:- getName() //Function call → console:
+        output:- hii my name is ritik
+
+        js:-console.log(getName) //Function ka definition print hoga
+        output:- ƒ getName() { ... }
+
+        js:- console.log("x1", x) //x ki value ab 10 hai
+        output:- x1 10
+
+        Final Output Order:-
+            hello
+            x undefined
+            hii my name is ritik
+            ƒ getName() { ... }
+            x1 10

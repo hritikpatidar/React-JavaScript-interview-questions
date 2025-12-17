@@ -107,7 +107,7 @@
 
              
 ## Question 1:  What is JavaScript?
-**Answer:** JavaScript is a high-level, interpreted, dynamically typed programming language mainly used to create interactive and dynamic web applications. It runs on the client-side in browsers and also on the server-side using Node.js.
+**Answer:** JavaScript is a synchronous signle-threaded language. this is a high-level, interpreted, dynamically typed programming language mainly used to create interactive and dynamic web applications. It runs on the client-side in browsers and also on the server-side using Node.js.
 
 ###  Key Points:
 - JavaScript is single-threaded but handles async operations using the event loop..
