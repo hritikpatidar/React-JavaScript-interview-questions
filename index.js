@@ -291,4 +291,23 @@ for (let i = 0; i < arr4.length; i++) {
 }
 
 const result = arrSum - arrSum2
-console.log(result)
+console.log("find missing number ---------------------------------",result)
+
+//find min or max number in array 
+
+let array = [55, 2, 12, 43, 34, 56, 10, 19, 88, 76, 68, 50]
+
+let min = array[0];
+let max = array[0];
+
+for (let num of array) {
+    if (num > max) {
+        max = num;
+    }
+    if (num < min) {
+        min = num
+    }
+}
+
+console.log("min", min)
+console.log("max", max)
