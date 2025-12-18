@@ -638,38 +638,33 @@ console.log(typeof b); // "object"
 
 ### [🔝 Back to Top](#core-javascript)
 
-## Question 23: What are Template Literals?
+## Question 23: What is function invocation?
 
 **Answer:**  
-Template literals allow embedding variables and expressions inside strings using backticks (`` ` ``).  
+Function invocation means executing a function by using parentheses () after the function name.  
 
 ---
 
-### Key Points:
-- Use backticks instead of single (`'`) or double (`"`) quotes.  
-- Support **string interpolation** using `${}`.  
-- Allow **multi-line strings** without `\n`.  
-- Can include **expressions & function calls** inside `${}`.  
-
----
+### Different Ways to Invoke a Function
+- ### Normal Invocation
+    sum(2, 3);
+- ### Method Invocation
+    obj.getName();
+- ### Constructor Invocation
+    new User("Ritik");
+- ### Using call, apply, bind
+    fn.call(thisArg);
+    fn.apply(thisArg, []);
 
 ### 💡 Example Code:
 ```js
-let name = "Ritik";
-let age = 25;
+//Function Declaration (sirf banana)
+function sayHello() {
+  console.log("Hello");
+}
 
-// String interpolation
-console.log(`Hello, ${name}! You are ${age} years old.`);
-
-// Multi-line string
-let message = `
-This is line 1
-This is line 2
-`;
-console.log(message);
-
-// Expression inside template literal
-console.log(`Next year, you will be ${age + 1}`);
+// function invication (call/exicute)
+sayHello();
 ```
 
 ### [🔝 Back to Top](#core-javascript)
