@@ -428,3 +428,33 @@ scrollFunction()
 
 
 // console.log(obj1[obj2])
+
+// //Kya array me aise 2 numbers hain jinka sum = target ho?
+// let arr = [1, 2, 3, 4, 5];
+// let target = 6
+// let found = false;
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] + arr[j] === target) {
+//             found = true;
+//         }
+//     }
+// }
+
+// console.log("found", found);
+
+
+// //Array ke numbers continuous (lagataar) hain ya nahi?
+// let arr = [1, 2, 3, 4, 5]
+// // let arr = [1,3,4]
+
+// let isConsecutive = true
+
+// for (let i = 0; i < arr.length-1; i++) {
+//     if (arr[i + 1] != arr[i] + 1) {
+//         isConsecutive = false;
+//         break; 
+//     }
+// }
+
+// console.log("isConsecutive",isConsecutive)
