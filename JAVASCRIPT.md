@@ -1125,6 +1125,10 @@ console.log("End");
 Debouncing is a technique to **limit the rate** at which a function executes.  
 A debounced function runs **only after a specified delay** has passed since the last time it was invoked.  
 
+short:- Debounce delays function execution until the user stops triggering the event. 
+
+“Jab tak user ruk na jaaye, function call mat karo.”
+
 ---
 
 ### ✅ Key Points:
@@ -1156,6 +1160,10 @@ window.addEventListener("resize", debounce(handleResize, 500));
 **Answer:**  
 Throttling is a technique to **limit the frequency** at which a function executes.  
 A throttled function runs **at most once** in a specified time interval, no matter how many times it is triggered.
+
+short:- “Throttle ensures a function runs at most once in a given time interval.”
+
+“Function ko fixed time me sirf ek baar chalne do.”
 
 ---
 

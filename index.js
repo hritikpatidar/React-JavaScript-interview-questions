@@ -327,3 +327,104 @@ function getRitilk() {
 getName()
 console.log(getName)
 console.log("x1", x)
+
+
+// Debounce:
+// “Debounce delays function execution until the user stops triggering the event.”
+//Debounce ka matlab:
+// “Jab tak user ruk na jaaye, function call mat karo.”
+function debounce(fn, delay) {
+    let timer;
+    return function () {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            fn();
+        }, delay)
+    }
+}
+const search = () => {
+    console.log("search...")
+}
+let searchFunction = debounce(search, 500)
+searchFunction()
+searchFunction()
+searchFunction()
+
+
+// Throttle:
+// “Throttle ensures a function runs at most once in a given time interval.”
+// Throttle ka matlab:
+// “Function ko fixed time me sirf ek baar chalne do.”
+function throttle(fn, limit) {
+    let flag = true;
+
+    return function () {
+        if (flag) {
+            fn();
+            flag = false;
+            setTimeout(() => {
+                flag = true
+            }, limit)
+        }
+    };
+}
+
+const scrollEvent = () => {
+    console.log("scroll...")
+}
+
+const scrollFunction = throttle(scrollEvent, 1000)
+scrollFunction()
+scrollFunction()
+scrollFunction()
+
+
+// // convert into object to array 
+// let obj = { a: 1, b: 2, c: 3, d: 4, }
+// console.log("obj", obj)
+// console.log(Object.entries(obj))
+
+// //ek arrya ne muner string or charactor he unko alag karna he 
+// let arr = [100, "q", "ritik", 10, 8, "r"];
+// let num = [];
+// let str = [];
+// let ch = [];
+
+// for (let value of arr) {
+//     if (typeof value === "number") {
+//         num.push(value)
+//     } else if (typeof value === "string" && value.length > 1) {
+//         str.push(value)
+//     } else {
+//         ch.push(value)
+//     }
+// }
+
+// console.log("num", num)
+// console.log("str", str)
+// console.log("ch", ch)
+
+
+//object assignment
+// let obj1 = {};
+// let obj2 = {
+//     name: "ritik patidar"
+// };
+// let obj3 = {
+//     name: "shubham vishwakarma"
+// }
+// console.log("1",obj1)
+
+// obj1[obj2] = {
+//     name: "jay chouhan"
+// }
+// console.log("2",obj1)
+
+
+// obj1[obj3] = {
+//     name: "shradha sharma"
+// }
+// console.log("3",obj1)
+
+
+// console.log(obj1[obj2])
