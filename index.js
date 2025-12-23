@@ -379,12 +379,12 @@ scrollFunction()
 scrollFunction()
 
 
-// // convert into object to array 
+// // convert into object to array
 // let obj = { a: 1, b: 2, c: 3, d: 4, }
 // console.log("obj", obj)
 // console.log(Object.entries(obj))
 
-// //ek arrya ne muner string or charactor he unko alag karna he 
+// //ek arrya ne muner string or charactor he unko alag karna he
 // let arr = [100, "q", "ritik", 10, 8, "r"];
 // let num = [];
 // let str = [];
@@ -453,8 +453,92 @@ scrollFunction()
 // for (let i = 0; i < arr.length-1; i++) {
 //     if (arr[i + 1] != arr[i] + 1) {
 //         isConsecutive = false;
-//         break; 
+//         break;
 //     }
 // }
 
 // console.log("isConsecutive",isConsecutive)
+
+// // interview question sum 2 digit with simple and curing function
+// function sum(a, b) {
+//     if (a && b) return a + b
+//     let total = a;
+//     return function next(c) {
+//         if (c === undefined) return total
+//         total += c
+//         return next
+//     }
+// }
+
+
+// console.log(sum(8, 9))
+// console.log(sum(8)(9)())
+// console.log(sum(8)(9)(10)())
+// console.log(sum(8)(9)(10)(20)())
+
+
+//find largest word of string
+// let str = "javascript is very powerful"
+
+// let splitStr = str.split(" ");
+// let count = 0;
+// let value = ""
+// for (let i = 0; i < splitStr.length; i++) {
+//     console.log(splitStr[i].length)
+//     if (splitStr[i].length > count) {
+//         count = splitStr[i].length
+//         value = splitStr[i]
+//     }
+// }
+
+// console.log(value)
+
+// //Two object comparition function
+// let a = { a: 1, b: 2 };
+// let b = { b: 2, a: 1 };
+
+// function compareObject(a, b) {
+//     let keyA = Object.keys(a)
+//     let keyB = Object.keys(b)
+
+//     if (keyA.length !== keyB.length) return false
+//     for (let key in a) {
+//         if (!b.hasOwnProperty(key)) return false
+//         if (a[key] != b[key]) return false
+//     }
+//     return true
+// }
+
+
+// console.log("object comparition------------->",compareObject(a, b))
+
+// //Array Left Rotation
+
+// //1.
+// let arr = [1, 2, 3, 4, 5]
+// let k = 1
+// let temp = arr[0]
+
+// for (let i = 0; i < k; i++) {
+//     temp = arr[0]
+//     arr.shift(arr[i])
+//     arr.push(temp)
+// }
+// console.log("Array Left Rotation---------------->",arr);
+
+// //2.
+// console.log("arr", arr)
+// let arr = [1, 2, 3, 4, 5];
+// let k = 2;
+
+// for (let t = 0; t < k; t++) {
+//     let first = arr[0];
+
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         arr[i] = arr[i + 1];
+//     }
+
+//     arr[arr.length - 1] = first;
+// }
+
+// console.log("Array Left Rotation---------------->",arr);
