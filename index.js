@@ -542,3 +542,166 @@ scrollFunction()
 // }
 
 // console.log("Array Left Rotation---------------->",arr);
+
+// //Count by Category
+// let arr = [
+//     { name: "A", category: "Fabric" },
+//     { name: "B", category: "Material" },
+//     { name: "C", category: "Fabric" }
+// ]
+
+// let counter = {};
+
+// for (let value of arr) {
+//     counter[value.category] = (counter[value.category] || 0) + 1
+// }
+
+// console.log(counter)
+
+
+// //Top Rated Only
+// let arr = [
+//     { name: "A", rating: 4.5 },
+//     { name: "B", rating: 3.8 },
+//     { name: "C", rating: 4.2 }
+// ]
+
+
+// const result = arr.filter(item => item.rating >= 4)
+// console.log(result)
+
+
+// //Latest N Items
+// let arr = [
+//     { name: "A", createdAt: "2024-01-01" },
+//     { name: "A1", createdAt: "2024-02-01" },
+//     { name: "A2", createdAt: "2024-04-01" },
+//     { name: "B", createdAt: "2024-02-01" },
+//     { name: "C", createdAt: "2024-03-01" }
+// ]
+
+// let result = arr.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)).splice(arr.length - 2, arr.length)
+// console.log("result", result)
+
+
+// // arange Unique Categories
+// let arr = [
+//     { category: "Fabric" },
+//     { category: "Material" },
+//     { category: "Fabric" }
+// ]
+
+// let counter = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (!counter.includes(arr[i].category)) counter.push(arr[i].category)
+// }
+// console.log("counter",counter)
+
+
+// //Average Rating
+// let arr = [
+//     { rating: 4 },
+//     { rating: 5 },
+//     { rating: 3 }
+// ]
+// let sum = 0
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i].rating
+// }
+
+// console.log("average rating", sum / arr.length)
+
+
+// //Category-wise Average Rating
+// let arr = [
+//     { category: "Fabric", rating: 4 },
+//     { category: "Material", rating: 5 },
+//     { category: "Fabric", rating: 3 }
+// ]
+
+// let counter = {};
+
+// for (let i = 0; i < arr.length; i++) {
+//     counter[arr[i].category] = { value: (counter[arr[i].category]?.value || 0) + arr[i].rating, count: (counter[arr[i].category]?.count || 0) + 1 }
+// }
+
+// for (let value in counter) {
+//     console.log(counter[value])
+//     counter[value] = counter[value].value / counter[value].count
+// }
+
+// console.log("counter", counter)
+
+
+// //Find Products with Price Range
+// let arr = [
+//     { name: "A", price: 100 },
+//     { name: "B", price: 250 },
+//     { name: "C", price: 180 }
+// ]
+
+// const max = 300;
+// const min = 150;
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].price >= min && arr[i].price <= max) {
+//         console.log(arr[i])
+//     }
+// }
+
+
+// //Group by Category
+// let arr = [
+//     { name: "A", category: "Fabric" },
+//     { name: "B", category: "Material" },
+//     { name: "C", category: "Fabric" }
+// ]
+
+// let counter = {}
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (!counter.hasOwnProperty(arr[i].category)) counter[arr[i].category] = []
+//     counter[arr[i].category].push(arr[i].name)
+// }
+
+// console.log("counter", counter)
+
+
+// //Latest Item per Category
+// let arr = [
+//     { name: "A", category: "Fabric", createdAt: "2024-01-01" },
+//     { name: "B", category: "Fabric", createdAt: "2024-02-01" },
+//     { name: "C", category: "Material", createdAt: "2024-01-15" }
+// ]
+
+// let counter = {}
+
+// for (let i = 0; i < arr.length; i++) {
+//     let cat = arr[i].category;
+
+//     if (!counter[cat]) {
+//         counter[cat] = arr[i];
+//     } else {
+//         if (new Date(arr[i].createdAt) > new Date(counter[cat].createdAt)) {
+//             counter[cat] = arr[i];
+//         }
+//     }
+// }
+
+// console.log("counter",counter)
+
+
+// //Safe Access & Default
+// let obj = { rating: null }
+
+// let rating;
+
+// if (obj.rating != null) {
+//   rating = obj.rating;
+// } else {
+//   rating = 0;
+// }
+
+// console.log(rating);
