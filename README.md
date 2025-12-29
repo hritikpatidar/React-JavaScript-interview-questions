@@ -22,10 +22,10 @@ Agar aap **JavaScript (Basic to Advanced)** padhna chahte ho, to is folder/file 
 ## 🧠 Logical Questions Practice Karni Hai?
 Agar aapko **logic building** aur **interview questions** practice karne hain, to is folder/file me jaayein:
 
-👉 **[React Notes](/index.js)**  
+👉 **[React Notes](/index.js)**   
 📌 Yahan aapko FizzBuzz, array problems, string problems, aur other logical programs milenge.
 
----
+--- 
 
 ## ⚛️ React Padhna Hai?
 Agar aap **React.js** padhna chahte ho, to is folder/file me jaayein:
