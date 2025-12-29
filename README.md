@@ -11,14 +11,6 @@ Is project me alag-alag topics ke liye alag files/folders banaye gaye hain. Neec
 
 ---
 
-## ⚛️ React Padhna Hai?
-Agar aap **React.js** padhna chahte ho, to is folder/file me jaayein:
-
-👉 **`/react.md`**  
-📌 Yahan aapko React ke concepts, components, hooks, aur examples milenge.
-
----
-
 ## 📜 JavaScript Padhna Hai?
 Agar aap **JavaScript (Basic to Advanced)** padhna chahte ho, to is folder/file ko follow karein:
 
@@ -35,6 +27,13 @@ Agar aapko **logic building** aur **interview questions** practice karne hain, t
 
 ---
 
+## ⚛️ React Padhna Hai?
+Agar aap **React.js** padhna chahte ho, to is folder/file me jaayein:
+
+👉 **`/react.md`**  
+📌 Yahan aapko React ke concepts, components, hooks, aur examples milenge.
+
+---
 ## ⭐ Important Instructions
 - Pehle **JavaScript** padhein
 - Uske baad **Logical Questions** solve karein
