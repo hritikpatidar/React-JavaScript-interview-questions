@@ -1,4 +1,4 @@
-# 📘 Student Learning Repository Done
+# 📘 Student Learning Repository
 
 Welcome Students 👋  
 Is repository ka purpose aapko **React**, **JavaScript**, aur **Logical Programming Questions** ko easily samajhne aur practice karne me help karna hai.
