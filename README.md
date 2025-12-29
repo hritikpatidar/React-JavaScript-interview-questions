@@ -14,7 +14,7 @@ Is project me alag-alag topics ke liye alag files/folders banaye gaye hain. Neec
 ## 📜 JavaScript Padhna Hai?
 Agar aap **JavaScript (Basic to Advanced)** padhna chahte ho, to is folder/file ko follow karein:
 
-👉 **`/javascript.md`**  
+👉 **[React Notes](/JAVASCRIPT.md)**  
 📌 Yahan variables, functions, loops, array, object, aur important JS concepts cover kiye gaye hain.
 
 ---
@@ -22,7 +22,7 @@ Agar aap **JavaScript (Basic to Advanced)** padhna chahte ho, to is folder/file 
 ## 🧠 Logical Questions Practice Karni Hai?
 Agar aapko **logic building** aur **interview questions** practice karne hain, to is folder/file me jaayein:
 
-👉 **`/index.js`**  
+👉 **[React Notes](/index.js)**  
 📌 Yahan aapko FizzBuzz, array problems, string problems, aur other logical programs milenge.
 
 ---
@@ -30,7 +30,7 @@ Agar aapko **logic building** aur **interview questions** practice karne hain, t
 ## ⚛️ React Padhna Hai?
 Agar aap **React.js** padhna chahte ho, to is folder/file me jaayein:
 
-👉 **`/react.md`**  
+👉 **[React Notes](/REACTJS.md)** 
 📌 Yahan aapko React ke concepts, components, hooks, aur examples milenge.
 
 ---
